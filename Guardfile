@@ -1,5 +1,6 @@
 
-guard 'jekyll-plus', :serve => true do
+guard 'jekyll-plus', :serve => true, :extensions => ['coffee', 'scss'] do
+
   watch /.*/
   ignore /^_site/
 end
