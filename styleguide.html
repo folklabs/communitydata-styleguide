@@ -5,6 +5,7 @@ block_categories:
   - links
   - lists
   - text
+  - visualizations
 ---
 
 <ul>
@@ -21,7 +22,7 @@ block_categories:
   {% for p in site.blocks %}
   {% if p.category == cat %}
 
-  <tt>{{p.relative_path | remove: '_blocks/elements/' | remove: '.html' | remove: cat | remove: '/'}}</tt>
+  <tt>{{p.relative_path | remove: '_blocks/' | remove: 'patterns/' | remove: '.html' | remove: cat | remove: '/'}}</tt>
   {{p.content}}
 
   {% highlight html %}
