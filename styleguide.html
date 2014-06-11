@@ -1,0 +1,35 @@
+---
+layout: default
+block_categories:
+  - headings
+  - links
+  - lists
+  - text
+---
+
+<ul>
+{% for cat in page.block_categories %}
+  <li>
+    <a href="#{{cat}}">{{cat | capitalize}}</a>
+  </li>
+{% endfor %}
+</ul>
+
+{% for cat in page.block_categories %}
+  <a id="{{cat}}"><h2>{{cat | capitalize}}</h2></a>
+
+  {% for p in site.blocks %}
+  {% if p.category == cat %}
+
+  <tt>{{p.relative_path | remove: '_blocks/elements/' | remove: '.html' | remove: cat | remove: '/'}}</tt>
+  {{p.content}}
+
+  {% highlight html %}
+  {{p.content }}
+  {% endhighlight %}
+
+  <hr/>
+
+  {% endif %}
+  {% endfor %}
+{% endfor %}

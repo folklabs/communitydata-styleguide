@@ -4,6 +4,7 @@
 /* Base */
 /* ----------------------------------------------------------*/
 
+// $headings-color: #f00;
 
 
 
@@ -22,7 +23,7 @@ body {
   background-color: #fdfdfd;
 }
 
-h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
+// h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
 
 a         { color: #2a7ae2; text-decoration: none; }
 a:hover   { color: #000; text-decoration: underline; }
@@ -409,5 +410,8 @@ a:visited { color: #205caa; }
     margin: 0 0 15px; }
 
 }
+// $link-color: #ff0;
+// $text-color: #0f0;
 
+@import 'bootstrap/bootstrap';
 @import 'test';
