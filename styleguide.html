@@ -22,12 +22,16 @@ block_categories:
   {% for p in site.blocks %}
   {% if p.category == cat %}
 
-  <tt>{{p.relative_path | remove: '_blocks/' | remove: 'patterns/' | remove: '.html' | remove: cat | remove: '/'}}</tt>
+  <tt>{{p.relative_path | remove: '_blocks/' | remove: 'elements/' | remove: 'patterns/' | remove: '.html' | remove: cat | remove: '/'}}</tt>
   {{p.content}}
 
+  <details>
+    <summary>Code</summary>
   {% highlight html %}
   {{p.content }}
   {% endhighlight %}
+
+  </details>
 
   <hr/>
 
