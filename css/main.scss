@@ -413,5 +413,7 @@ a:visited { color: #205caa; }
 // $link-color: #ff0;
 // $text-color: #0f0;
 
+@import 'variables';
 @import 'bootstrap/bootstrap';
-@import 'test';
+// Insert other imports here
+
