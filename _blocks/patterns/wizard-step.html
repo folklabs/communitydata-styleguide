@@ -2,7 +2,10 @@
 category: wizard
 ---
 
-<div>
-  <h3>Housing in Lambeth</h3>
-  <div>Categories: Housing</div>
-</div>
+<wizard-progress-bar active-step="Datasets" class="ng-scope">
+<!-- ngRepeat: step in steps -->
+<div class="wizard-box ng-scope ng-binding active" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Datasets</div>
+<div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Visualization type</div>
+<div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Columns</div>
+<div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Visualize!</div>
+</wizard-progress-bar>
