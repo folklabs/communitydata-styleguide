@@ -1,11 +1,19 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-  {% include drupal-header.html %}
+  {% include head.html %}
 
+    <body>
 
-  <article class="post-content">
-  {{ content }}
-  </article>
+    {% include drupal-header.html %}
 
+    <div class="page-content">
+      <div class="wrap">
+      {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    </body>
+</html>
