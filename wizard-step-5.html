@@ -2,4 +2,33 @@
 layout: drupal-page
 ---
 
-Insert Drupal page content here....
+<wizard-progress-bar active-step="Datasets" class="ng-scope">
+<div ng-view="">
+  <h2 class="ng-scope">Choose datasets</h2>
+  <wizard-progress-bar active-step="Datasets" class="ng-scope">
+  <!-- ngRepeat: step in steps -->
+  <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Select datasets</div>
+  <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Select visualisation type</div>
+  <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Select data columns</div>
+  <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Edit visualisation</div>
+  <div class="wizard-box ng-scope ng-binding active" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Save</div>
+  </wizard-progress-bar>
+  <div class="buttons ng-scope">
+    <a href="#/select-type">
+    <div class="btn btn-primary pull-right">Select visualization type</div>
+    </a>
+  </div>
+  <div class="content ng-scope">
+    <!-- %p Browse datasets: -->
+    <div class="list-group">
+      <!-- ngRepeat: dataset in datatables | orderBy:'label' -->
+    </div>
+  </div>
+  <div class="sidebar-right ng-scope">
+    <div class="selected-data">
+      <h4>Selected datasets</h4>
+      <!-- ngRepeat: dataset in datatables | filter: {selected: true} -->
+    </div>
+  </div>
+</div>
+</wizard-progress-bar>
