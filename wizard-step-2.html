@@ -7,7 +7,7 @@ layout: drupal-page
   <h2 class="ng-scope">Visualisation builder: select visualisation type</h2>
   <wizard-progress-bar active-step="Datasets" class="ng-scope">
   <!-- ngRepeat: step in steps -->
-  <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps"><span class="glyphicon glyphicon-ok-sign"></span>1. Select datasets</div>
+  <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps"><span class="glyphicon glyphicon-ok-sign"></span> Select datasets</div>
   <div class="wizard-box ng-scope ng-binding active" ng-class="{active: activeStep == step}" ng-repeat="step in steps">2. Select visualisation type</div>
   <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">3. Select data columns</div>
   <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">4. Edit visualisation</div>
@@ -39,3 +39,52 @@ layout: drupal-page
 </div>
 </wizard-progress-bar>
 
+<div id="row">
+  <h3>Related visualisations</h3>
+  <div class="container">
+    <a href="#">
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <img data-src="holder.js/245x245" alt="Thumbnail">
+        <div class="caption">
+          <h4>Bar chart</h4>
+          <p>A bar chart or bar graph is a chart with rectangular bars with lengths proportional to the quantitative values that they represent.</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="#">
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <img data-src="holder.js/245x245" alt="Thumbnail">
+        <div class="caption">
+          <h4>Pie chart</h4>
+          <p>A pie chart is a circular chart divided into sectors, illustrating numerical proportion. In a pie chart, the arc length of each sector (and consequently its central angle and area), is proportional to the quantity it represents.</p>
+        </div>
+      </div>
+    </div>
+    </a>
+  <a href="#">
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <img data-src="holder.js/245x245" alt="Thumbnail">
+        <div class="caption">
+          <h4>Line chart</h4>
+          <p>A line chart or line graph is a type of chart which displays information as a series of data points called 'markers' connected by straight line segments.</p>
+        </div>
+      </div>
+    </div>
+    </a>
+  <a href="#">
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <img data-src="holder.js/245x245" alt="Thumbnail">
+        <div class="caption">
+          <h4>Map plot</h4>
+          <p>Maps are symbolic depictions highlighting the relationships between elements such as objects, regions and themes within a territorial space.</p>
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>
+</div>

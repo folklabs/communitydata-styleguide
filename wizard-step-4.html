@@ -7,9 +7,9 @@ layout: drupal-page
   <h2 class="ng-scope">Choose datasets</h2>
   <wizard-progress-bar active-step="Datasets" class="ng-scope">
   <!-- ngRepeat: step in steps -->
-  <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps"><span class="glyphicon glyphicon-ok-sign"></span>1. Select datasets</div>
-  <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps"><span class="glyphicon glyphicon-ok-sign"></span>2. Select visualisation type</div>
-  <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps"><span class="glyphicon glyphicon-ok-sign"></span>3. Select data columns</div>
+  <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps"><span class="glyphicon glyphicon-ok-sign"></span> Select datasets</div>
+  <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps"><span class="glyphicon glyphicon-ok-sign"></span> Select visualisation type</div>
+  <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps"><span class="glyphicon glyphicon-ok-sign"></span> Select data columns</div>
   <div class="wizard-box ng-scope ng-binding active" ng-class="{active: activeStep == step}" ng-repeat="step in steps">4. Edit visualisation</div>
   <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">5. Publish visualisation</div>
   </wizard-progress-bar>
@@ -31,10 +31,32 @@ layout: drupal-page
   </div>
   <div class="ng-scope">
     <div class="selected-data">
-      <h4>Selected datasets</h4>
+      <h4>Edit the physical attributes of your visualisation</h4>
       <hr>
       <!-- ngRepeat: dataset in datatables | filter: {selected: true} -->
     </div>
   </div>
 </div>
 </wizard-progress-bar>
+
+<div class="row">
+  <div class="col-md-12">
+    <img class="media-object" data-src="holder.js/1140x400" alt="Visualisation preview">
+  </div>
+</div>
+
+<div id="row">
+  <div class="col-sm-6 col-md-3">
+    <h4>Global chart settings</h4>
+
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <h4>Global chart settings</h4>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <h4>Global chart settings</h4>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <h4>Global chart settings</h4>
+  </div>
+</div>
