@@ -1,20 +1,19 @@
 ---
 layout: drupal-page
 ---
-
 <wizard-progress-bar active-step="Datasets" class="ng-scope">
 <div ng-view="">
-  <h2 class="ng-scope">Choose datasets</h2>
+  <h2 class="ng-scope">Visualisation builder: choose datasets</h2>
   <wizard-progress-bar active-step="Datasets" class="ng-scope">
   <!-- ngRepeat: step in steps -->
-  <div class="wizard-box ng-scope ng-binding active" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Select datasets</div>
-  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Select visualisation type</div>
-  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Select data columns</div>
-  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Edit visualisation</div>
-  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Save</div>
+  <div class="wizard-box ng-scope ng-binding active" ng-class="{active: activeStep == step}" ng-repeat="step in steps">1. Select datasets</div>
+  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">2. Select visualisation type</div>
+  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">3. Select data columns</div>
+  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">4. Edit visualisation</div>
+  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">5. Publish visualisation</div>
   </wizard-progress-bar>
   <div class="buttons ng-scope">
-    <a href="#/select-type">
+    <a href="/wizard-step-2">
     <div class="btn btn-primary pull-right">Select visualization type</div>
     </a>
   </div>
@@ -24,11 +23,144 @@ layout: drupal-page
       <!-- ngRepeat: dataset in datatables | orderBy:'label' -->
     </div>
   </div>
-  <div class="sidebar-right ng-scope">
+</div>
+</wizard-progress-bar>
+<div class="row">
+  <div class="ng-scope">
     <div class="selected-data">
-      <h4>Selected datasets</h4>
+      <h4>Add one or more datasets you wish to visualise by click the <span class="glyphicon glyphicon-plus-sign"></span> button.</h4>
+      <hr>
       <!-- ngRepeat: dataset in datatables | filter: {selected: true} -->
     </div>
   </div>
+  <div class="list-group col-md-8">
+    <div href="#" class="list-group-item clearfix">
+      <a class="pull-right" href="#"><span class="glyphicon glyphicon-plus-sign"></span></a>
+      <h4 class="list-group-item-heading">Census data 2009/10 - Households Below Average Income</h4>
+      <p class="pull-right"> <strong>Uploaded by:</strong> <a href="#">Jason Silverman</a></p>
+      <p><strong>Source:</strong> <a href="#">UK Office of National Statistics</a></p>
+      <p class="pull-right"><strong>Added:</strong> Wed 29/11/14</p>
+      <p><strong>Source URL:</strong> <a href="http://research.dwp.gov.uk/asd/index.php?page=hbai">http://research.dwp.gov.uk/asd/index.php?page=hbai</a></p>
+      <p class="pull-right"><strong>Updated:</strong> Mon 19/12/14</p>
+      <strong>Columns available:</strong>
+      <p class="label label-default">user-defined tag #1</p>
+      <p class="label label-default">user-defined tag #2</p>
+      <p class="label label-default">user-defined tag #3</p>
+      <p class="label label-default">user-defined tag #4</p>
+      <p class="label label-default">user-defined tag #5</p>
+      <p class="pull-right">
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+      </p>
+    </div>
+    <div href="#" class="list-group-item clearfix">
+      <a class="pull-right" href="#"><span class="glyphicon glyphicon-plus-sign"></span></a>
+      <h4 class="list-group-item-heading">Census data 2009/10 - Households Below Average Income</h4>
+      <p class="pull-right"> <strong>Uploaded by:</strong> <a href="#">Jason Silverman</a></p>
+      <p><strong>Source:</strong> <a href="#">UK Office of National Statistics</a></p>
+      <p class="pull-right"><strong>Added:</strong> Wed 29/11/14</p>
+      <p><strong>Source URL:</strong> <a href="http://research.dwp.gov.uk/asd/index.php?page=hbai">http://research.dwp.gov.uk/asd/index.php?page=hbai</a></p>
+      <p class="pull-right"><strong>Updated:</strong> Mon 19/12/14</p>
+      <strong>Columns available:</strong>
+      <p class="label label-default">user-defined tag #1</p>
+      <p class="label label-default">user-defined tag #2</p>
+      <p class="label label-default">user-defined tag #3</p>
+      <p class="label label-default">user-defined tag #4</p>
+      <p class="label label-default">user-defined tag #5</p>
+      <p class="pull-right">
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+      </p>
+    </div>
+    <div href="#" class="list-group-item clearfix">
+      <a class="pull-right" href="#"><span class="glyphicon glyphicon-plus-sign"></span></a>
+      <h4 class="list-group-item-heading">Census data 2009/10 - Households Below Average Income</h4>
+      <p class="pull-right"> <strong>Uploaded by:</strong> <a href="#">Jason Silverman</a></p>
+      <p><strong>Source:</strong> <a href="#">UK Office of National Statistics</a></p>
+      <p class="pull-right"><strong>Added:</strong> Wed 29/11/14</p>
+      <p><strong>Source URL:</strong> <a href="http://research.dwp.gov.uk/asd/index.php?page=hbai">http://research.dwp.gov.uk/asd/index.php?page=hbai</a></p>
+      <p class="pull-right"><strong>Updated:</strong> Mon 19/12/14</p>
+      <strong>Columns available:</strong>
+      <p class="label label-default">user-defined tag #1</p>
+      <p class="label label-default">user-defined tag #2</p>
+      <p class="label label-default">user-defined tag #3</p>
+      <p class="label label-default">user-defined tag #4</p>
+      <p class="label label-default">user-defined tag #5</p>
+      <p class="pull-right">
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+      </p>
+    </div>
+    <div href="#" class="list-group-item clearfix">
+      <a class="pull-right" href="#"><span class="glyphicon glyphicon-plus-sign"></span></a>
+      <h4 class="list-group-item-heading">Census data 2009/10 - Households Below Average Income</h4>
+      <p class="pull-right"> <strong>Uploaded by:</strong> <a href="#">Jason Silverman</a></p>
+      <p><strong>Source:</strong> <a href="#">UK Office of National Statistics</a></p>
+      <p class="pull-right"><strong>Added:</strong> Wed 29/11/14</p>
+      <p><strong>Source URL:</strong> <a href="http://research.dwp.gov.uk/asd/index.php?page=hbai">http://research.dwp.gov.uk/asd/index.php?page=hbai</a></p>
+      <p class="pull-right"><strong>Updated:</strong> Mon 19/12/14</p>
+      <strong>Columns available:</strong>
+      <p class="label label-default">user-defined tag #1</p>
+      <p class="label label-default">user-defined tag #2</p>
+      <p class="label label-default">user-defined tag #3</p>
+      <p class="label label-default">user-defined tag #4</p>
+      <p class="label label-default">user-defined tag #5</p>
+      <p class="pull-right">
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+      </p>
+    </div>
+    <div href="#" class="list-group-item clearfix">
+      <a class="pull-right" href="#"><span class="glyphicon glyphicon-plus-sign"></span></a>
+      <h4 class="list-group-item-heading">Census data 2009/10 - Households Below Average Income</h4>
+      <p class="pull-right"> <strong>Uploaded by:</strong> <a href="#">Jason Silverman</a></p>
+      <p><strong>Source:</strong> <a href="#">UK Office of National Statistics</a></p>
+      <p class="pull-right"><strong>Added:</strong> Wed 29/11/14</p>
+      <p><strong>Source URL:</strong> <a href="http://research.dwp.gov.uk/asd/index.php?page=hbai">http://research.dwp.gov.uk/asd/index.php?page=hbai</a></p>
+      <p class="pull-right"><strong>Updated:</strong> Mon 19/12/14</p>
+      <strong>Columns available:</strong>
+      <p class="label label-default">user-defined tag #1</p>
+      <p class="label label-default">user-defined tag #2</p>
+      <p class="label label-default">user-defined tag #3</p>
+      <p class="label label-default">user-defined tag #4</p>
+      <p class="label label-default">user-defined tag #5</p>
+      <p class="pull-right">
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+      </p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Selected datasets</div>
+      <!-- List group -->
+      <ul class="list-group">
+        <li class="list-group-item">
+          <p class="pull-right"><a href="#"><span class="badge"><span class="glyphicon glyphicon-remove-sign"></span> remove</span></a></p>
+          <p>Census data 2009/10 – Households Below Average Income</p>
+        </li>
+        <li class="list-group-item">
+          <p class="pull-right"><a href="#"><span class="badge"><span class="glyphicon glyphicon-remove-sign"></span> remove</span></a></p>
+          <p>Households in temporary accommodation per 1000 households, 2011 Q2 to 2013 Q4, England, District</p>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
-</wizard-progress-bar>
+</div>
