@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CommunityData Styleguide</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Community Data is a web project to offer citizens better ways to create open data visualizations.">
+    <link rel="canonical" href="http://folklabs.com/wizard-step-1/">
+
+    <!-- Custom CSS -->
+    <!-- Custom styles for this template -->
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/bower_components/holderjs/holder.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+    <body>
+
+        <!-- Fixed navbar -->
+    <header class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">COD</a>
+        </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="/datasets">Datasets</a></li>
+            <li><a href="/visualisations">Visualisations</a></li>
+            <li><a href="/dashboards">Dashboards</a></li>
+            <li><a href="/datastories">Data stories</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/help">Help</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-plus-sign"></span> Add <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/">Dataset</a></li>
+                <li><a href="#">Visualisation</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Data story</a></li>
+              </ul>
+            </li>
+            <li><a href="/user"><img src ="../images/user-avatar-gilesgibson.png"> Giles Gibson</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </header>
+
+
+    <div class="page-content">
+      <div class="wrap">
+      <wizard-progress-bar active-step="Datasets" class="ng-scope">
+<div ng-view="">
+  <h2 class="ng-scope">Visualisation builder: choose datasets</h2>
+  <wizard-progress-bar active-step="Datasets" class="ng-scope">
+  <!-- ngRepeat: step in steps -->
+  <div class="wizard-box ng-scope ng-binding active" ng-class="{active: activeStep == step}" ng-repeat="step in steps">1. Select datasets</div>
+  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">2. Select visualisation type</div>
+  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">3. Select data columns</div>
+  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">4. Edit visualisation</div>
+  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">5. Publish visualisation</div>
+  </wizard-progress-bar>
+  <div class="buttons ng-scope">
+    <a href="/wizard-step-2">
+    <div class="btn btn-primary pull-right">Select visualization type</div>
+    </a>
+  </div>
+  <div class="content ng-scope">
+    <!-- %p Browse datasets: -->
+    <div class="list-group">
+      <!-- ngRepeat: dataset in datatables | orderBy:'label' -->
+    </div>
+  </div>
+</div>
+</wizard-progress-bar>
+<div class="row">
+  <div class="ng-scope">
+    <div class="selected-data">
+      <h4>Add one or more datasets you wish to visualise by click the <span class="glyphicon glyphicon-plus-sign"></span> button.</h4>
+      <hr>
+      <!-- ngRepeat: dataset in datatables | filter: {selected: true} -->
+    </div>
+  </div>
+  <div class="list-group col-md-8">
+    <div href="#" class="list-group-item clearfix">
+      <a class="pull-right" href="#"><span class="glyphicon glyphicon-plus-sign"></span></a>
+      <h4 class="list-group-item-heading">Census data 2009/10 - Households Below Average Income</h4>
+      <p class="pull-right"> <strong>Uploaded by:</strong> <a href="#">Jason Silverman</a></p>
+      <p><strong>Source:</strong> <a href="#">UK Office of National Statistics</a></p>
+      <p class="pull-right"><strong>Added:</strong> Wed 29/11/14</p>
+      <p><strong>Source URL:</strong> <a href="http://research.dwp.gov.uk/asd/index.php?page=hbai">http://research.dwp.gov.uk/asd/index.php?page=hbai</a></p>
+      <p class="pull-right"><strong>Updated:</strong> Mon 19/12/14</p>
+      <strong>Columns available:</strong>
+      <p class="label label-default">user-defined tag #1</p>
+      <p class="label label-default">user-defined tag #2</p>
+      <p class="label label-default">user-defined tag #3</p>
+      <p class="label label-default">user-defined tag #4</p>
+      <p class="label label-default">user-defined tag #5</p>
+      <p class="pull-right">
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+      </p>
+    </div>
+    <div href="#" class="list-group-item clearfix">
+      <a class="pull-right" href="#"><span class="glyphicon glyphicon-plus-sign"></span></a>
+      <h4 class="list-group-item-heading">Census data 2009/10 - Households Below Average Income</h4>
+      <p class="pull-right"> <strong>Uploaded by:</strong> <a href="#">Jason Silverman</a></p>
+      <p><strong>Source:</strong> <a href="#">UK Office of National Statistics</a></p>
+      <p class="pull-right"><strong>Added:</strong> Wed 29/11/14</p>
+      <p><strong>Source URL:</strong> <a href="http://research.dwp.gov.uk/asd/index.php?page=hbai">http://research.dwp.gov.uk/asd/index.php?page=hbai</a></p>
+      <p class="pull-right"><strong>Updated:</strong> Mon 19/12/14</p>
+      <strong>Columns available:</strong>
+      <p class="label label-default">user-defined tag #1</p>
+      <p class="label label-default">user-defined tag #2</p>
+      <p class="label label-default">user-defined tag #3</p>
+      <p class="label label-default">user-defined tag #4</p>
+      <p class="label label-default">user-defined tag #5</p>
+      <p class="pull-right">
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+      </p>
+    </div>
+    <div href="#" class="list-group-item clearfix">
+      <a class="pull-right" href="#"><span class="glyphicon glyphicon-plus-sign"></span></a>
+      <h4 class="list-group-item-heading">Census data 2009/10 - Households Below Average Income</h4>
+      <p class="pull-right"> <strong>Uploaded by:</strong> <a href="#">Jason Silverman</a></p>
+      <p><strong>Source:</strong> <a href="#">UK Office of National Statistics</a></p>
+      <p class="pull-right"><strong>Added:</strong> Wed 29/11/14</p>
+      <p><strong>Source URL:</strong> <a href="http://research.dwp.gov.uk/asd/index.php?page=hbai">http://research.dwp.gov.uk/asd/index.php?page=hbai</a></p>
+      <p class="pull-right"><strong>Updated:</strong> Mon 19/12/14</p>
+      <strong>Columns available:</strong>
+      <p class="label label-default">user-defined tag #1</p>
+      <p class="label label-default">user-defined tag #2</p>
+      <p class="label label-default">user-defined tag #3</p>
+      <p class="label label-default">user-defined tag #4</p>
+      <p class="label label-default">user-defined tag #5</p>
+      <p class="pull-right">
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+      </p>
+    </div>
+    <div href="#" class="list-group-item clearfix">
+      <a class="pull-right" href="#"><span class="glyphicon glyphicon-plus-sign"></span></a>
+      <h4 class="list-group-item-heading">Census data 2009/10 - Households Below Average Income</h4>
+      <p class="pull-right"> <strong>Uploaded by:</strong> <a href="#">Jason Silverman</a></p>
+      <p><strong>Source:</strong> <a href="#">UK Office of National Statistics</a></p>
+      <p class="pull-right"><strong>Added:</strong> Wed 29/11/14</p>
+      <p><strong>Source URL:</strong> <a href="http://research.dwp.gov.uk/asd/index.php?page=hbai">http://research.dwp.gov.uk/asd/index.php?page=hbai</a></p>
+      <p class="pull-right"><strong>Updated:</strong> Mon 19/12/14</p>
+      <strong>Columns available:</strong>
+      <p class="label label-default">user-defined tag #1</p>
+      <p class="label label-default">user-defined tag #2</p>
+      <p class="label label-default">user-defined tag #3</p>
+      <p class="label label-default">user-defined tag #4</p>
+      <p class="label label-default">user-defined tag #5</p>
+      <p class="pull-right">
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+      </p>
+    </div>
+    <div href="#" class="list-group-item clearfix">
+      <a class="pull-right" href="#"><span class="glyphicon glyphicon-plus-sign"></span></a>
+      <h4 class="list-group-item-heading">Census data 2009/10 - Households Below Average Income</h4>
+      <p class="pull-right"> <strong>Uploaded by:</strong> <a href="#">Jason Silverman</a></p>
+      <p><strong>Source:</strong> <a href="#">UK Office of National Statistics</a></p>
+      <p class="pull-right"><strong>Added:</strong> Wed 29/11/14</p>
+      <p><strong>Source URL:</strong> <a href="http://research.dwp.gov.uk/asd/index.php?page=hbai">http://research.dwp.gov.uk/asd/index.php?page=hbai</a></p>
+      <p class="pull-right"><strong>Updated:</strong> Mon 19/12/14</p>
+      <strong>Columns available:</strong>
+      <p class="label label-default">user-defined tag #1</p>
+      <p class="label label-default">user-defined tag #2</p>
+      <p class="label label-default">user-defined tag #3</p>
+      <p class="label label-default">user-defined tag #4</p>
+      <p class="label label-default">user-defined tag #5</p>
+      <p class="pull-right">
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-active"></span>
+      <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+      </p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Selected datasets</div>
+      <!-- List group -->
+      <ul class="list-group">
+        <li class="list-group-item">
+          <p class="pull-right"><a href="#"><span class="badge"><span class="glyphicon glyphicon-remove-sign"></span> remove</span></a></p>
+          <p>Census data 2009/10 – Households Below Average Income</p>
+        </li>
+        <li class="list-group-item">
+          <p class="pull-right"><a href="#"><span class="badge"><span class="glyphicon glyphicon-remove-sign"></span> remove</span></a></p>
+          <p>Households in temporary accommodation per 1000 households, 2011 Q2 to 2013 Q4, England, District</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+      </div>
+    </div>
+
+    <!-- <div id="footer">
+  <div class="container">
+    <div class="row">
+      <h3>Related visualisations</h3>
+      <div class="container">
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img data-src="holder.js/245x200" alt="Thumbnail">
+            <div class="caption">
+              <h4>Commercial planning permission request applications granted vs total applications, Kennington, 2012–13</h4>
+              <p>This map shows the number of planning permission requests that have been made between January 2012 and January 2013 in the Kennington area.</p>
+              <p class="small"><strong>Added:</strong> Wed, 30/04/2014</p>
+              <p class="small"><strong>Updated:</strong> Mon, 19/05/2014</p>
+              <p class="small"><strong>Type:</strong> Locatiom map</p>
+              <p class="small"><strong>Created by:</strong> Terri Sumner</p>
+              <p>
+              <span class="glyphicon glyphicon-star ratings-star-active"></span>
+              <span class="glyphicon glyphicon-star ratings-star-active"></span>
+              <span class="glyphicon glyphicon-star ratings-star-active"></span>
+              <span class="glyphicon glyphicon-star ratings-star-active"></span>
+              <span class="glyphicon glyphicon-star ratings-star-active"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img data-src="holder.js/245x200" alt="Thumbnail">
+            <div class="caption">
+              <h4>Lambeth traffic accidents & fatalities, within 100 meters of school entrances and school bus stops 2004–14</h4>
+              <p>A bar graph showing the number of fatal and nonfatal traffic accidents near schools. I really want to try to show that these figures are increasing.</p>
+              <p class="small"><strong>Added:</strong> Wed, 30/04/2014</p>
+              <p class="small"><strong>Updated:</strong> Mon, 19/05/2014</p>
+              <p class="small"><strong>Type:</strong> Pie chart</p>
+              <p class="small"><strong>Created by:</strong> Paul Stevens</p>
+              <p>
+              <span class="glyphicon glyphicon-star ratings-star-active"></span>
+              <span class="glyphicon glyphicon-star ratings-star-active"></span>
+              <span class="glyphicon glyphicon-star ratings-star-active"></span>
+              <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+              <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img data-src="holder.js/245x200" alt="Thumbnail">
+            <div class="caption">
+              <h4>Number of registered community groups and civil society organisations, Herne Hill, 2003–13</h4>
+              <p>Data about the rise and rise of Herne Hill’s flourishing civil society networks over the decade that saw the local economy and environment transformed.</p>
+              <p class="small"><strong>Added:</strong> Wed, 30/04/2014</p>
+              <p class="small"><strong>Updated:</strong> Mon, 19/05/2014</p>
+              <p class="small"><strong>Type:</strong> Bar chart</p>
+              <p class="small"><strong>Created by:</strong> Jason Silverman</p>
+              <p>
+              <span class="glyphicon glyphicon-star ratings-star-active"></span>
+              <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+              <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+              <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+              <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img data-src="holder.js/245x200" alt="Thumbnail">
+            <div class="caption">
+              <h4>Petty theft hotspots, Loughborough Junction, 2012</h4>
+              <p>This map proves that there are still two major crime hotspots in the area which we need to do more about – the area just behind Loughborough Junction and the area on Gordon Grove between the adventure playground and Top Gear Motors.</p>
+              <p class="small"><strong>Added:</strong> Wed, 30/04/2014</p>
+              <p class="small"><strong>Updated:</strong> Mon, 19/05/2014</p>
+              <p class="small"><strong>Type:</strong> Chloropleth map</p>
+              <p class="small"><strong>Created by:</strong> Claire Ritchie</p>
+              <p>
+              <span class="glyphicon glyphicon-star ratings-star-active"></span>
+              <span class="glyphicon glyphicon-star ratings-star-active"></span>
+              <span class="glyphicon glyphicon-star ratings-star-active"></span>
+              <span class="glyphicon glyphicon-star ratings-star-active"></span>
+              <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.min.js"></script>
+
+
+    </body>
+</html>

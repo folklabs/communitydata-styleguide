@@ -7,12 +7,19 @@
     <title>CommunityData Styleguide</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Community Data is a web project to offer citizens better ways to create open data visualizations.">
-    <link rel="canonical" href="http://folklabs.com/communitydata-styleguide/styleguide/">
+    <link rel="canonical" href="http://folklabs.com/styleguide/">
 
     <!-- Custom CSS -->
+    <!-- Custom styles for this template -->
+    <link href="navbar-fixed-top.css" rel="stylesheet">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/communitydata-styleguide/css/main.css">
-    <script src="/communitydata-styleguide/bower_components/holderjs/holder.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/bower_components/holderjs/holder.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 
@@ -22,7 +29,7 @@
 
   <div class="wrap">
 
-    <a class="site-title" href="/communitydata-styleguide/">CommunityData Styleguide</a>
+    <a class="site-title" href="/">CommunityData Styleguide</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -38,19 +45,29 @@
       </a>
       <div class="trigger">
         
-          <a class="page-link" href="/communitydata-styleguide/about/">About</a>
+          <a class="page-link" href="/about/">About</a>
         
-          <a class="page-link" href="/communitydata-styleguide/bootstrap/"></a>
+          <a class="page-link" href="/bootstrap/"></a>
         
-          <a class="page-link" href="/communitydata-styleguide/feed.xml"></a>
+          <a class="page-link" href="/feed.xml"></a>
         
-          <a class="page-link" href="/communitydata-styleguide/"></a>
+          <a class="page-link" href="/"></a>
         
-          <a class="page-link" href="/communitydata-styleguide/css/main.css"></a>
+          <a class="page-link" href="/css/main.css"></a>
         
-          <a class="page-link" href="/communitydata-styleguide/styleguide/"></a>
+          <a class="page-link" href="/styleguide/"></a>
         
-          <a class="page-link" href="/communitydata-styleguide/test/"></a>
+          <a class="page-link" href="/test/"></a>
+        
+          <a class="page-link" href="/wizard-step-1/"></a>
+        
+          <a class="page-link" href="/wizard-step-2/"></a>
+        
+          <a class="page-link" href="/wizard-step-3/"></a>
+        
+          <a class="page-link" href="/wizard-step-4/"></a>
+        
+          <a class="page-link" href="/wizard-step-5/"></a>
         
       </div>
     </nav>
@@ -79,11 +96,23 @@
   </li>
 
   <li>
+    <a href="#media">Media</a>
+  </li>
+
+  <li>
+    <a href="#tables">Tables</a>
+  </li>
+
+  <li>
     <a href="#text">Text</a>
   </li>
 
   <li>
-    <a href="#globals">Globals</a>
+    <a href="#forms">Forms</a>
+  </li>
+
+  <li>
+    <a href="#global">Global</a>
   </li>
 
   <li>
@@ -775,6 +804,65 @@
   
   
   
+
+  <tt>list-ordered</tt>
+  <ol>
+    <li>Browse the applications we've listed.</li>
+    <li>When you find the app want to deploy, send us a quick note to brigade-info@codeforamerica.org to let us know which one. We'll use the information to help you get started and to report back to the community which apps people care about maintaining.</li>
+      <ol>
+        <li>This is a nested list, subordinate to the first. This is list item one (and is the first item) in this subordinate list.</li>
+        <li>This is a nested list, subordinate to the first. This is list item two of this subordinate list.</li>
+        <li>This is a nested list, subordinate to the first. This is list item three (and is the last item) in this subordinate list.</li>
+      </ol>
+    <li>Host a launch-a-thon to get your app off the ground. Use our MeetUp Everywhere.</li>
+</ol>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;ol&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Browse the applications we&#39;ve listed.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>When you find the app want to deploy, send us a quick note to brigade-info@codeforamerica.org to let us know which one. We&#39;ll use the information to help you get started and to report back to the community which apps people care about maintaining.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;ol&gt;</span>
+        <span class="nt">&lt;li&gt;</span>This is a nested list, subordinate to the first. This is list item one (and is the first item) in this subordinate list.<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>This is a nested list, subordinate to the first. This is list item two of this subordinate list.<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>This is a nested list, subordinate to the first. This is list item three (and is the last item) in this subordinate list.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ol&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Host a launch-a-thon to get your app off the ground. Use our MeetUp Everywhere.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>list-unordered</tt>
+  <ul>
+    <li>Name</li>
+    <li>Location</li>
+    <li>Brigade and/or Affiliations.</li>
+    <li>Something you want to get from the forum or something you want to get done.</li>
+    <li>Anything else you want to add but don't write a book. There's plenty of time to get to know one another.</li>
+</ul>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Name<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Location<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Brigade and/or Affiliations.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Something you want to get from the forum or something you want to get done.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Anything else you want to add but don&#39;t write a book. There&#39;s plenty of time to get to know one another.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
   
   
   
@@ -784,6 +872,591 @@
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <a id="media"><h2>Media</h2></a>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <tt>audio</tt>
+  <audio src="/_media/audio/audio.mp3" controls></audio>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">&quot;/_media/audio/audio.mp3&quot;</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>img</tt>
+  <img src="/_media/images/big-data.jpg" alt="The Code for America team"/>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/_media/images/big-data.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;The Code for America team&quot;</span><span class="nt">/&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>video</tt>
+  <video controls>
+    <source src="/_media/video/video.webm" type="video/webm"/>
+    <source src="/_media/video/video.mp4" type="video/mp4"/>
+</video>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">&quot;/_media/video/video.webm&quot;</span> <span class="na">type=</span><span class="s">&quot;video/webm&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">&quot;/_media/video/video.mp4&quot;</span> <span class="na">type=</span><span class="s">&quot;video/mp4&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/video&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <a id="tables"><h2>Tables</h2></a>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <tt>table</tt>
+  <table>
+    <thead>
+        <tr>
+            <th colspan="2">Programs</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Fellowship</th>
+            <td>$2,733,782</td>
+        </tr>
+        <tr>
+            <th>Brigade</th>
+            <td>$286,257</td>
+        </tr>
+        <tr>
+            <th>Accelerator</th>
+            <td>$280,896</td>
+        </tr>
+        <tr>
+            <th>Civic Commons &amp; Peer Network</th>
+            <td>$324,140</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <tbody>
+        <tr>
+            <th>Total Programs</th>
+            <td>$3,625,075</td>
+        </tr>
+        <tr>
+            <th>Administration</th>
+            <td>$226,648</td>
+        </tr>
+        <tr>
+            <th>Fundraising</th>
+            <td>$153,504</td>
+        </tr>
+    <tfoot>
+        <tr>
+            <th>Total Expenses</th>
+            <td>$4,005,227</td>
+        </tr>
+    </tfoot>
+</table>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;table&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th</span> <span class="na">colspan=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>Programs<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Fellowship<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$2,733,782<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Brigade<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$286,257<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Accelerator<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$280,896<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Civic Commons <span class="ni">&amp;amp;</span> Peer Network<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$324,140<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+
+<span class="nt">&lt;table&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Total Programs<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$3,625,075<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Administration<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$226,648<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Fundraising<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$153,504<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tfoot&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Total Expenses<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$4,005,227<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tfoot&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
   
   
   
@@ -1003,7 +1676,35 @@
   
   
   
+
+  <tt>abbr</tt>
+  <p><abbr title="General Transit Feed Specification">GTFS</abbr> is for static data, and GTFS-realtime is an extension for real-time, geolocated data.</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;General Transit Feed Specification&quot;</span><span class="nt">&gt;</span>GTFS<span class="nt">&lt;/abbr&gt;</span> is for static data, and GTFS-realtime is an extension for real-time, geolocated data.<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
   
+  
+  
+
+  <tt>address</tt>
+  <address>For more details, contact <a href="mailto:mm@example.com">Michal Migurski</a>.</address>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;address&gt;</span>For more details, contact <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;mailto:mm@example.com&quot;</span><span class="nt">&gt;</span>Michal Migurski<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/address&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
   
   
   
@@ -1043,6 +1744,20 @@
   
   
   
+
+  <tt>cite</tt>
+  <p><cite>Los Angeles Times</cite>, August 26, 2013</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;&lt;cite&gt;</span>Los Angeles Times<span class="nt">&lt;/cite&gt;</span>, August 26, 2013<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
   
   
 
@@ -1077,6 +1792,20 @@
   
   
   
+
+  <tt>del</tt>
+  <p>We still have some have hats <del>and hoodies</del> left.</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>We still have some have hats <span class="nt">&lt;del&gt;</span>and hoodies<span class="nt">&lt;/del&gt;</span> left.<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
   
   
 
@@ -1101,7 +1830,49 @@
   
   
   
+
+  <tt>dfn</tt>
+  <p>The <dfn>Brigade network</dfn> is an ongoing effort to deploy, maintain and sustain civic technology and open data infrastructures.</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>The <span class="nt">&lt;dfn&gt;</span>Brigade network<span class="nt">&lt;/dfn&gt;</span> is an ongoing effort to deploy, maintain and sustain civic technology and open data infrastructures.<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
   
+  
+  
+
+  <tt>dl-dfn</tt>
+  <dl>
+    <dt><dfn>Brigade network</dfn>,</dt>
+    <dd>An ongoing effort to deploy, maintain and sustain civic technology and open data infrastructures.</dd>
+    <dt><dfn>The Civic Startups program</dfn></dt>
+    <dd>Offers entrepreneurs mentorship in navigating the government procurement process and building sustainable businesses. </dd>
+    <dt><dfn>The Peer Network</dfn>,</dt>
+    <dd>Where government officials and public servants connect to share civic tech resources, best practices and open data policies. </dd>
+</dl>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;dl&gt;</span>
+    <span class="nt">&lt;dt&gt;&lt;dfn&gt;</span>Brigade network<span class="nt">&lt;/dfn&gt;</span>,<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>An ongoing effort to deploy, maintain and sustain civic technology and open data infrastructures.<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;&lt;dfn&gt;</span>The Civic Startups program<span class="nt">&lt;/dfn&gt;&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>Offers entrepreneurs mentorship in navigating the government procurement process and building sustainable businesses. <span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;&lt;dfn&gt;</span>The Peer Network<span class="nt">&lt;/dfn&gt;</span>,<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>Where government officials and public servants connect to share civic tech resources, best practices and open data policies. <span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
   
   
   
@@ -1121,11 +1892,119 @@
   
   
   
+
+  <tt>figure-blockquote</tt>
+  <figure>
+    <blockquote>
+        <p>Startups are the most powerful possibility I can find for helping to improve those services. A lack of procurement options is at the heart of the bad technology and the inefficient business processes of many cities.</p>
+    </blockquote>
+    <figcaption>
+         Zachary Townsend, in <cite>Why I'm mentoring for America</cite>, from the <cite>Code for America Blog</cite>, November 1st 2013
+     </figcaption>
+</figure>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;figure&gt;</span>
+    <span class="nt">&lt;blockquote&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Startups are the most powerful possibility I can find for helping to improve those services. A lack of procurement options is at the heart of the bad technology and the inefficient business processes of many cities.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/blockquote&gt;</span>
+    <span class="nt">&lt;figcaption&gt;</span>
+         Zachary Townsend, in <span class="nt">&lt;cite&gt;</span>Why I&#39;m mentoring for America<span class="nt">&lt;/cite&gt;</span>, from the <span class="nt">&lt;cite&gt;</span>Code for America Blog<span class="nt">&lt;/cite&gt;</span>, November 1st 2013
+     <span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
   
   
   
+
+  <tt>figure-img</tt>
+  <figure>
+    <img src="/_media/images/big-data.jpg" alt=""/>
+    <figcaption>
+        The Code for America team
+    </figcaption>
+</figure>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;figure&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/_media/images/big-data.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;figcaption&gt;</span>
+        The Code for America team
+    <span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
   
   
+  
+
+  <tt>figure-list</tt>
+  <figure>
+    <figcaption>Largest Meetup Groups</figcaption>
+    <ol>
+        <li>#betaNYC, a Code for America Brigade for NYC: 1,281 Members</li>
+        <li>Code for America Philly: 488 Members</li>
+        <li>Code for Boston: 427 Members</li>
+        <li>Code for Seattle: 379 Members</li>
+        <li>Code for San Francisco - Civic Hack Night: 336 Members</li>
+        <li>Code for DC: 218 Members</li>
+        <li>OpenOakland: The Code for America Brigade in Oakland: 200 Members</li>
+        <li>Colorado Code for Communities: 173 Members</li>
+        <li>Code for Los Angeles: 149 Members</li>
+        <li>Arlington Code Shop: 148 Members</li>
+    </ol>
+</figure>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;figure&gt;</span>
+    <span class="nt">&lt;figcaption&gt;</span>Largest Meetup Groups<span class="nt">&lt;/figcaption&gt;</span>
+    <span class="nt">&lt;ol&gt;</span>
+        <span class="nt">&lt;li&gt;</span>#betaNYC, a Code for America Brigade for NYC: 1,281 Members<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>Code for America Philly: 488 Members<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>Code for Boston: 427 Members<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>Code for Seattle: 379 Members<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>Code for San Francisco - Civic Hack Night: 336 Members<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>Code for DC: 218 Members<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>OpenOakland: The Code for America Brigade in Oakland: 200 Members<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>Colorado Code for Communities: 173 Members<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>Code for Los Angeles: 149 Members<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>Arlington Code Shop: 148 Members<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+<span class="nt">&lt;/figure&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>hr</tt>
+  <hr/>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;hr/&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
   
   
   
@@ -1145,9 +2024,63 @@
   
   
   
+
+  <tt>paragraph</tt>
+  <p>The success of the Fellowship is measured not in lines of code, but in sustainable, meaningful change. It's about proving that government can move at the speed of citizens, can speak the language of citizens, and can cost what citizens are willing to pay.</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>The success of the Fellowship is measured not in lines of code, but in sustainable, meaningful change. It&#39;s about proving that government can move at the speed of citizens, can speak the language of citizens, and can cost what citizens are willing to pay.<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
   
   
   
+
+  <tt>pre-code</tt>
+  <pre><code>function panel(element, canClose, closeHandler) {
+    this.element = element;
+    this.canClose = canClose;
+    this.closeHandler = function () {
+        if (closeHandler) closeHandler()
+    };
+}</code></pre>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;pre&gt;&lt;code&gt;</span>function panel(element, canClose, closeHandler) {
+    this.element = element;
+    this.canClose = canClose;
+    this.closeHandler = function () {
+        if (closeHandler) closeHandler()
+    };
+}<span class="nt">&lt;/code&gt;&lt;/pre&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>small</tt>
+  <p><small>Code for America Labs, Inc is a non-partisan, non-political 501(c)(3) organization. Content is licensed through Creative Commons.</small></p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;&lt;small&gt;</span>Code for America Labs, Inc is a non-partisan, non-political 501(c)(3) organization. Content is licensed through Creative Commons.<span class="nt">&lt;/small&gt;&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
   
   
   
@@ -1167,59 +2100,18 @@
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 
-  <a id="globals"><h2>Globals</h2></a>
+  <tt>time</tt>
+  <time datetime="2013-11-13 09:00-05:00">November 1st, 2013</time>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">&quot;2013-11-13 09:00-05:00&quot;</span><span class="nt">&gt;</span>November 1st, 2013<span class="nt">&lt;/time&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
 
   
   
@@ -1273,159 +2165,1768 @@
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+  <a id="forms"><h2>Forms</h2></a>
+
+  
+  
+
+  <tt>button-default</tt>
+  <button>Button</button>
+<button type="submit">Submit button</button>
+<a href="#" class="button">Link button</a>
+<input type="button" value="Input button">
+<input type="submit" value="Input submit button">
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;button&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span><span class="nt">&gt;</span>Submit button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">value=</span><span class="s">&quot;Input button&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Input submit button&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
   
   
   
 
-  <tt></tt>
-  <div>
-  <h3>Housing in Lambeth</h3>
-  <div>Categories: Housing</div>
+  <tt>button-size-l</tt>
+  <button class="button-l">Button</button>
+<button type="submit" class="button-l">Submit button</button>
+<a href="#" class="button button-l">Link button</a>
+<input type="button" value="Input button" class="button-l">
+<input type="submit" value="Input submit button" class="button-l">
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-l&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-l&quot;</span><span class="nt">&gt;</span>Submit button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-l&quot;</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">value=</span><span class="s">&quot;Input button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-l&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Input submit button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-l&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>button-size-s</tt>
+  <button class="button-s">Button</button>
+<button type="submit" class="button-s">Submit button</button>
+<a href="#" class="button button-s">Link button</a>
+<input type="button" value="Input button" class="button-s">
+<input type="submit" value="Input submit button" class="button-s">
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-s&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-s&quot;</span><span class="nt">&gt;</span>Submit button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-s&quot;</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">value=</span><span class="s">&quot;Input button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-s&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Input submit button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-s&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>button-style-alternative</tt>
+  <button class="button-alternative">Button</button>
+<button type="submit" class="button-alternative">Submit button</button>
+<a href="#" class="button-alternative">Link button</a>
+<input type="button" value="Input button" class="button-alternative">
+<input type="submit" value="Input submit button" class="button-alternative">
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-alternative&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-alternative&quot;</span><span class="nt">&gt;</span>Submit button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button-alternative&quot;</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">value=</span><span class="s">&quot;Input button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-alternative&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Input submit button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-alternative&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>button-style-disabled</tt>
+  <button disabled>Button</button>
+<button type="submit" disabled>Submit button</button>
+<a href="#" class="button-disabled">Link button</a>
+<input type="button" value="Input button" disabled>
+<input type="submit" value="Input submit button" disabled>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">disabled</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">disabled</span><span class="nt">&gt;</span>Submit button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button-disabled&quot;</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">value=</span><span class="s">&quot;Input button&quot;</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Input submit button&quot;</span> <span class="na">disabled</span><span class="nt">&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>button-style-disabled.txt</tt>
+  For form buttons, use the attribute "disabled". For links styled as buttons, use both the classes "button" and "button-disabled".
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html">For form buttons, use the attribute &quot;disabled&quot;. For links styled as buttons, use both the classes &quot;button&quot; and &quot;button-disabled&quot;.</code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>button-style-neutral</tt>
+  <button class="button-neutral">Button</button>
+<button type="submit" class="button-neutral">Submit button</button>
+<a href="#" class="button-neutral">Link button</a>
+<input type="button" value="Input button" class="button-neutral">
+<input type="submit" value="Input submit button" class="button-neutral">
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-neutral&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-neutral&quot;</span><span class="nt">&gt;</span>Submit button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button-neutral&quot;</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">value=</span><span class="s">&quot;Input button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-neutral&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Input submit button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-neutral&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>button-style-prominent</tt>
+  <button class="button-prominent">Button</button>
+<button type="submit" class="button-prominent">Submit button</button>
+<a href="#" class="button button-prominent">Link button</a>
+<input type="button" value="Input button" class="button-prominent">
+<input type="submit" value="Input submit button" class="button-prominent">
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-prominent&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-prominent&quot;</span><span class="nt">&gt;</span>Submit button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-prominent&quot;</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">value=</span><span class="s">&quot;Input button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-prominent&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Input submit button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-prominent&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>button-style-subtle</tt>
+  <button class="button-subtle">Button</button>
+<button type="submit" class="button-subtle">Submit button</button>
+<a href="#" class="button button-subtle">Link button</a>
+<input type="button" value="Input button" class="button-subtle">
+<input type="submit" value="Input submit button" class="button-subtle">
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-subtle&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-subtle&quot;</span><span class="nt">&gt;</span>Submit button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button button-subtle&quot;</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">value=</span><span class="s">&quot;Input button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-subtle&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Input submit button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-subtle&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>button-type-group</tt>
+  <div class="button-group">
+	<input type="submit" class="primary-button" value="Post comment"/>
+	<input type="button" class="button" value="Preview"/>
+	<a class="button button-unstyled" href="#">Cancel</a>
 </div>
 
 
   <details>
     <summary>Code</summary>
-  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div&gt;</span>
-  <span class="nt">&lt;h3&gt;</span>Housing in Lambeth<span class="nt">&lt;/h3&gt;</span>
-  <span class="nt">&lt;div&gt;</span>Categories: Housing<span class="nt">&lt;/div&gt;</span>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;button-group&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;primary-button&quot;</span> <span class="na">value=</span><span class="s">&quot;Post comment&quot;</span><span class="nt">/&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span> <span class="na">value=</span><span class="s">&quot;Preview&quot;</span><span class="nt">/&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;button button-unstyled&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
   </details>
 
   <hr/>
 
+  
+  
+  
+
+  <tt>button-type-progress-alternative</tt>
+  <button class="button-alternative button-progress">Button</button>
+<button type="submit" class="button-alternative button-progress">Submit button</button>
+<a href="#" class="button-alternative button-progress">Link button</a>
+<input type="button" class="button-alternative button-progress" value="Input button">
+<input type="submit" class="button-alternative button-progress" value="Input submit button">
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-alternative button-progress&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-alternative button-progress&quot;</span><span class="nt">&gt;</span>Submit button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button-alternative button-progress&quot;</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-alternative button-progress&quot;</span> <span class="na">value=</span><span class="s">&quot;Input button&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-alternative button-progress&quot;</span> <span class="na">value=</span><span class="s">&quot;Input submit button&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>button-type-progress-default</tt>
+  <button class="button-progress">Button</button>
+<button type="submit" class="button-progress">Submit button</button>
+<a href="#" class="button-progress">Link button</a>
+<input type="button" class="button-progress" value="Input button">
+<input type="submit" class="button-progress" value="Input submit button">
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-progress&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-progress&quot;</span><span class="nt">&gt;</span>Submit button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button-progress&quot;</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-progress&quot;</span> <span class="na">value=</span><span class="s">&quot;Input button&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-progress&quot;</span> <span class="na">value=</span><span class="s">&quot;Input submit button&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>button-type-progress-neutral</tt>
+  <button class="button-neutral button-progress">Button</button>
+<button type="submit" class="button-neutral button-progress">Submit button</button>
+<a href="#" class="button-neutral button-progress">Link button</a>
+<input type="button" class="button-neutral button-progress" value="Input button">
+<input type="submit" class="button-neutral button-progress" value="Input submit button">
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-neutral button-progress&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-neutral button-progress&quot;</span><span class="nt">&gt;</span>Submit button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button-neutral button-progress&quot;</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-neutral button-progress&quot;</span> <span class="na">value=</span><span class="s">&quot;Input button&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-neutral button-progress&quot;</span> <span class="na">value=</span><span class="s">&quot;Input submit button&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>button-type-progress-prominent</tt>
+  <button class="button-prominent button-progress">Button</button>
+<button type="submit" class="button-prominent button-progress">Submit button</button>
+<a href="#" class="button-prominent button-progress">Link button</a>
+<input type="button" class="button-prominent button-progress" value="Input button">
+<input type="submit" class="button-prominent button-progress" value="Input submit button">
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-prominent button-progress&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-prominent button-progress&quot;</span><span class="nt">&gt;</span>Submit button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button-prominent button-progress&quot;</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-prominent button-progress&quot;</span> <span class="na">value=</span><span class="s">&quot;Input button&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-prominent button-progress&quot;</span> <span class="na">value=</span><span class="s">&quot;Input submit button&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>button-type-progress-subtle</tt>
+  <button class="button-subtle button-progress">Button</button>
+<button type="submit" class="button-subtle button-progress">Submit button</button>
+<a href="#" class="button-subtle button-progress">Link button</a>
+<input type="button" class="button-subtle button-progress" value="Input button">
+<input type="submit" class="button-subtle button-progress" value="Input submit button">
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-subtle button-progress&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-subtle button-progress&quot;</span><span class="nt">&gt;</span>Submit button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button-subtle button-progress&quot;</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button-subtle button-progress&quot;</span> <span class="na">value=</span><span class="s">&quot;Input button&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-subtle button-progress&quot;</span> <span class="na">value=</span><span class="s">&quot;Input submit button&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>fieldset.select-checkboxes-captions</tt>
+  <form class="spotlight">
+    <fieldset class="select field">
+        <legend>Checkboxes with captions <abbr title="Required">*</abbr></legend>
+        <ul class="list-form">
+            <li>
+                <label for="checkbox11"><input id="checkbox11" name="checkbox" type="checkbox" checked/> Choice A</label>
+                <small class="note">Note about this option</small>
+            </li>
+            <li>
+                <label for="checkbox21"><input id="checkbox21" name="checkbox" type="checkbox"/> Choice B</label>
+                <small class="note">Note about this option</small>
+            </li>
+            <li>
+                <label for="checkbox31"><input id="checkbox31" name="checkbox" type="checkbox"/> Choice C</label>
+                <small class="note">Note about this option</small>
+            </li>
+        </ul>
+    </fieldset>
+</form>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;spotlight&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">&quot;select field&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;legend&gt;</span>Checkboxes with captions <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/legend&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;list-form&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox11&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;checkbox11&quot;</span> <span class="na">name=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">checked</span><span class="nt">/&gt;</span> Choice A<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this option<span class="nt">&lt;/small&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox21&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;checkbox21&quot;</span> <span class="na">name=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">/&gt;</span> Choice B<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this option<span class="nt">&lt;/small&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox31&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;checkbox31&quot;</span> <span class="na">name=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">/&gt;</span> Choice C<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this option<span class="nt">&lt;/small&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>fieldset.select-checkboxes</tt>
+  <form class="spotlight">
+    <fieldset class="select field">
+        <legend>Checkboxes <abbr title="Required">*</abbr></legend>
+        <ul class="list-form">
+            <li>
+                <label for="checkbox10"><input id="checkbox10" name="checkbox" type="checkbox" checked/> Choice A</label>
+            </li>
+            <li>
+                <label for="checkbox20"><input id="checkbox20" name="checkbox" type="checkbox"/> Choice B</label>
+            </li>
+            <li>
+                <label for="checkbox30"><input id="checkbox30" name="checkbox" type="checkbox"/> Choice C</label>
+            </li>
+        </ul>
+        <small class="note">Note about these options</small>
+    </fieldset>
+</form>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;spotlight&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">&quot;select field&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;legend&gt;</span>Checkboxes <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/legend&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;list-form&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox10&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;checkbox10&quot;</span> <span class="na">name=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">checked</span><span class="nt">/&gt;</span> Choice A<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox20&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;checkbox20&quot;</span> <span class="na">name=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">/&gt;</span> Choice B<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox30&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;checkbox30&quot;</span> <span class="na">name=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">/&gt;</span> Choice C<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about these options<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>fieldset.select-radios</tt>
+  <form class="spotlight">
+    <fieldset class="select field">
+        <legend>Radios <abbr title="Required">*</abbr></legend>
+        <ul class="list-form">
+            <li>
+                <label for="radio1"><input id="radio1" name="radio" type="radio" checked/> Option 1</label>
+            </li>
+            <li>
+                <label for="radio2"><input id="radio2" name="radio" type="radio"/> Option 2</label>
+            </li>
+            <li>
+                <label for="radio3"><input id="radio3" name="radio" type="radio"/> Option 3</label>
+            </li>
+        </ul>
+        <small class="note">Note about these options</small>
+    </fieldset>
+</form>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;spotlight&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">&quot;select field&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;legend&gt;</span>Radios <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/legend&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;list-form&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;radio1&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;radio1&quot;</span> <span class="na">name=</span><span class="s">&quot;radio&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">checked</span><span class="nt">/&gt;</span> Option 1<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;radio2&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;radio2&quot;</span> <span class="na">name=</span><span class="s">&quot;radio&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">/&gt;</span> Option 2<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;radio3&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;radio3&quot;</span> <span class="na">name=</span><span class="s">&quot;radio&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span><span class="nt">/&gt;</span> Option 3<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about these options<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>form-fieldset</tt>
+  <form>
+    <fieldset>
+    	<legend>Legend</legend>
+    	<p><small class="note">Required fields are marked <abbr title="Required">*</abbr></small></p>
+    </fieldset>
+</form>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;form&gt;</span>
+    <span class="nt">&lt;fieldset&gt;</span>
+    	<span class="nt">&lt;legend&gt;</span>Legend<span class="nt">&lt;/legend&gt;</span>
+    	<span class="nt">&lt;p&gt;&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Required fields are marked <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/small&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>form-input.checkbox</tt>
+  <p>
+	<label for="checkbox" class="check"><input id="checkbox" type="checkbox" class="checkbox" required/>Single checkbox</label>
+	<small class="note">Note about this field</small>
+<p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">class=</span><span class="s">&quot;check&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">required</span><span class="nt">/&gt;</span>Single checkbox<span class="nt">&lt;/label&gt;</span>
+	<span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this field<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>form-input.email</tt>
+  <p>
+	<label for="email">Email Address <abbr title="Required">*</abbr></label>
+	<input id="email" class="input" type="email" placeholder="you@example.com" required/>
+	<small class="note">Note about this field</small>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;email&quot;</span><span class="nt">&gt;</span>Email Address <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/label&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;email&quot;</span> <span class="na">class=</span><span class="s">&quot;input&quot;</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;you@example.com&quot;</span> <span class="na">required</span><span class="nt">/&gt;</span>
+	<span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this field<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>form-input.password</tt>
+  <p>
+	<label for="password">Password <abbr title="Required">*</abbr></label>
+	<input id="password" class="input" type="password" required/>
+	<small class="note">Note about this field</small>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;password&quot;</span><span class="nt">&gt;</span>Password <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/label&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;input&quot;</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">required</span><span class="nt">/&gt;</span>
+	<span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this field<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>form-input.text</tt>
+  <p>
+	<label for="text">Text Input <abbr title="Required">*</abbr></label>
+	<input id="text" class="input" type="text" required/>
+	<small class="note">Note about this field</small>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>Text Input <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/label&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;input&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">required</span><span class="nt">/&gt;</span>
+	<span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this field<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>form-input.url</tt>
+  <p>
+	<label for="url">Web Address <abbr title="Required">*</abbr></label>
+	<input id="url" class="input" type="url" placeholder="http://example.com" required/>
+	<small class="note">Note about this field</small>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>Web Address <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/label&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;url&quot;</span> <span class="na">class=</span><span class="s">&quot;input&quot;</span> <span class="na">type=</span><span class="s">&quot;url&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;http://example.com&quot;</span> <span class="na">required</span><span class="nt">/&gt;</span>
+	<span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this field<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>form-inputs-combined</tt>
+  <p>
+	<label for="combined">Combined Input</label>
+	<span class="combined">
+		<input id="combined" class="input" type="text"/><!--
+	 --><input type="button" class="button" value="Input Button"/>
+	</span>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;combined&quot;</span><span class="nt">&gt;</span>Combined Input<span class="nt">&lt;/label&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;combined&quot;</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;combined&quot;</span> <span class="na">class=</span><span class="s">&quot;input&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">/&gt;</span><span class="c">&lt;!--</span>
+<span class="c">	 --&gt;</span><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span> <span class="na">value=</span><span class="s">&quot;Input Button&quot;</span><span class="nt">/&gt;</span>
+	<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>form-options.checkboxes-captions</tt>
+  <form>
+    <fieldset>
+    	<legend>Checkbox <abbr title="Required">*</abbr></legend>
+    	<ul class="list-form">
+    		<li>
+    			<label for="checkbox1" class="check"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"/>Choice A</label>
+    			<small class="note">Note about these option</small>
+    		</li>
+    		<li>
+    			<label for="checkbox2" class="check"><input id="checkbox2" name="checkbox" type="checkbox"/>Choice B</label>
+    			<small class="note">Note about these option</small>
+    		</li>
+    		<li>
+    			<label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox"/>Choice C</label>
+    			<small class="note">Note about these option</small>
+    		</li>
+    	</ul>
+    </fieldset>
+</form>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;form&gt;</span>
+    <span class="nt">&lt;fieldset&gt;</span>
+    	<span class="nt">&lt;legend&gt;</span>Checkbox <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/legend&gt;</span>
+    	<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;list-form&quot;</span><span class="nt">&gt;</span>
+    		<span class="nt">&lt;li&gt;</span>
+    			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox1&quot;</span> <span class="na">class=</span><span class="s">&quot;check&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;checkbox1&quot;</span> <span class="na">name=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">checked=</span><span class="s">&quot;checked&quot;</span><span class="nt">/&gt;</span>Choice A<span class="nt">&lt;/label&gt;</span>
+    			<span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about these option<span class="nt">&lt;/small&gt;</span>
+    		<span class="nt">&lt;/li&gt;</span>
+    		<span class="nt">&lt;li&gt;</span>
+    			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox2&quot;</span> <span class="na">class=</span><span class="s">&quot;check&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;checkbox2&quot;</span> <span class="na">name=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">/&gt;</span>Choice B<span class="nt">&lt;/label&gt;</span>
+    			<span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about these option<span class="nt">&lt;/small&gt;</span>
+    		<span class="nt">&lt;/li&gt;</span>
+    		<span class="nt">&lt;li&gt;</span>
+    			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox3&quot;</span> <span class="na">class=</span><span class="s">&quot;check&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;checkbox3&quot;</span> <span class="na">name=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">/&gt;</span>Choice C<span class="nt">&lt;/label&gt;</span>
+    			<span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about these option<span class="nt">&lt;/small&gt;</span>
+    		<span class="nt">&lt;/li&gt;</span>
+    	<span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>form-options.checkboxes</tt>
+  <fieldset>
+	<legend>Checkbox <abbr title="Required">*</abbr></legend>
+	<ul class="list-form">
+		<li>
+			<label for="checkbox1" class="check"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"/>Choice A</label>
+		</li>
+		<li>
+			<label for="checkbox2" class="check"><input id="checkbox2" name="checkbox" type="checkbox"/>Choice B</label>
+		</li>
+		<li>
+			<label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox"/>Choice C</label>
+		</li>
+	</ul>
+	<small class="note">Note about these options</small>
+</fieldset>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;fieldset&gt;</span>
+	<span class="nt">&lt;legend&gt;</span>Checkbox <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/legend&gt;</span>
+	<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;list-form&quot;</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox1&quot;</span> <span class="na">class=</span><span class="s">&quot;check&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;checkbox1&quot;</span> <span class="na">name=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">checked=</span><span class="s">&quot;checked&quot;</span><span class="nt">/&gt;</span>Choice A<span class="nt">&lt;/label&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox2&quot;</span> <span class="na">class=</span><span class="s">&quot;check&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;checkbox2&quot;</span> <span class="na">name=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">/&gt;</span>Choice B<span class="nt">&lt;/label&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox3&quot;</span> <span class="na">class=</span><span class="s">&quot;check&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;checkbox3&quot;</span> <span class="na">name=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">/&gt;</span>Choice C<span class="nt">&lt;/label&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+	<span class="nt">&lt;/ul&gt;</span>
+	<span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about these options<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/fieldset&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>form-options.radios</tt>
+  <form>
+    <fieldset>
+    	<legend>Radio <abbr title="Required">*</abbr></legend>
+    	<ul class="list-form">
+    		<li>
+    			<label for="radio1" class="check"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"/>Option 1</label>
+    		</li>
+    		<li>
+    			<label for="radio2" class="check"><input id="radio2" name="radio" type="radio" class="radio"/>Option 2</label>
+    		</li>
+    		<li>
+    			<label for="radio3" class="check"><input id="radio3" name="radio" type="radio" class="radio"/>Option 3</label>
+    		</li>
+    	</ul>
+    	<small class="note">Note about these options</small>
+    </fieldset>
+</form>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;form&gt;</span>
+    <span class="nt">&lt;fieldset&gt;</span>
+    	<span class="nt">&lt;legend&gt;</span>Radio <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/legend&gt;</span>
+    	<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;list-form&quot;</span><span class="nt">&gt;</span>
+    		<span class="nt">&lt;li&gt;</span>
+    			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;radio1&quot;</span> <span class="na">class=</span><span class="s">&quot;check&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;radio1&quot;</span> <span class="na">name=</span><span class="s">&quot;radio&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span> <span class="na">checked=</span><span class="s">&quot;checked&quot;</span><span class="nt">/&gt;</span>Option 1<span class="nt">&lt;/label&gt;</span>
+    		<span class="nt">&lt;/li&gt;</span>
+    		<span class="nt">&lt;li&gt;</span>
+    			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;radio2&quot;</span> <span class="na">class=</span><span class="s">&quot;check&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;radio2&quot;</span> <span class="na">name=</span><span class="s">&quot;radio&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">/&gt;</span>Option 2<span class="nt">&lt;/label&gt;</span>
+    		<span class="nt">&lt;/li&gt;</span>
+    		<span class="nt">&lt;li&gt;</span>
+    			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;radio3&quot;</span> <span class="na">class=</span><span class="s">&quot;check&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;radio3&quot;</span> <span class="na">name=</span><span class="s">&quot;radio&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">/&gt;</span>Option 3<span class="nt">&lt;/label&gt;</span>
+    		<span class="nt">&lt;/li&gt;</span>
+    	<span class="nt">&lt;/ul&gt;</span>
+    	<span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about these options<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>form-select</tt>
+  <p>
+	<label for="select">Select your State <abbr title="Required">*</abbr></label>
+	<select id="state">
+	    <option>Alabama</option>
+	    <option>Alaska</option>
+	    <option>Arizona</option>
+	    <option>Arkansas</option>
+	    <option>American Samoa</option>
+	    <option>California</option>
+	    <option>Colorado</option>
+	    <option>Connecticut</option>
+	    <option>Delaware</option>
+	    <option>District of Columbia</option>
+	    <option>Florida</option>
+	    <option>Georgia</option>
+	    <option>Guam</option>
+	    <option>Hawaii</option>
+	    <option>Idaho</option>
+	    <option>Illinois</option>
+	    <option>Indiana</option>
+	    <option>Iowa</option>
+	    <option>Kansas</option>
+	    <option>Kentucky</option>
+	    <option>Louisiana</option>
+	    <option>Maine</option>
+	    <option>Maryland</option>
+	    <option>Massachusetts</option>
+	    <option>Michigan</option>
+	    <option>Minnesota</option>
+	    <option>Mississippi</option>
+	    <option>Missouri</option>
+	    <option>Montana</option>
+	    <option>Nebraska</option>
+	    <option>Nevada</option>
+	    <option>New Hampshire</option>
+	    <option>New Jersey</option>
+	    <option>New Mexico</option>
+	    <option>New York</option>
+	    <option>North Carolina</option>
+	    <option>North Dakota</option>
+	    <option>Northern Mariana Islands</option>
+	    <option>Ohio</option>
+	    <option>Oklahoma</option>
+	    <option>Oregon</option>
+	    <option>Pennsylvania</option>
+	    <option>Puerto Rico</option>
+	    <option>Rhode Island</option>
+	    <option>South Carolina</option>
+	    <option>South Dakota</option>
+	    <option>Tennessee</option>
+	    <option>Texas</option>
+	    <option>United States Virgin Islands</option>
+	    <option>Utah</option>
+	    <option>Vermont</option>
+	    <option>Virginia</option>
+	    <option>Washington</option>
+	    <option>West Virginia</option>
+	    <option>Wisconsin</option>
+	    <option>Wyoming</option>
+	</select>
+	<small class="note">Note about this selection</small>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;select&quot;</span><span class="nt">&gt;</span>Select your State <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/label&gt;</span>
+	<span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;state&quot;</span><span class="nt">&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Alabama<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Alaska<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Arizona<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Arkansas<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>American Samoa<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>California<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Colorado<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Connecticut<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Delaware<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>District of Columbia<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Florida<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Georgia<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Guam<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Hawaii<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Idaho<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Illinois<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Indiana<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Iowa<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Kansas<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Kentucky<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Louisiana<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Maine<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Maryland<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Massachusetts<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Michigan<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Minnesota<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Mississippi<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Missouri<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Montana<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Nebraska<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Nevada<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>New Hampshire<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>New Jersey<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>New Mexico<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>New York<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>North Carolina<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>North Dakota<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Northern Mariana Islands<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Ohio<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Oklahoma<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Oregon<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Pennsylvania<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Puerto Rico<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Rhode Island<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>South Carolina<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>South Dakota<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Tennessee<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Texas<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>United States Virgin Islands<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Utah<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Vermont<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Virginia<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Washington<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>West Virginia<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Wisconsin<span class="nt">&lt;/option&gt;</span>
+	    <span class="nt">&lt;option&gt;</span>Wyoming<span class="nt">&lt;/option&gt;</span>
+	<span class="nt">&lt;/select&gt;</span>
+	<span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this selection<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>form-signup</tt>
+  <form>
+    <ul class="list-form">
+        <li class="form-field">
+        	<input id="text" class="input" type="email" placeholder="email" />
+        	<small class="note">Note about this field</small>
+        </li>
+        <li class="form-field">
+        	<input id="text" class="input" type="text" placeholder="first name" />
+        </li>
+        <li class="form-field">
+        	<select>
+        	  <option>1</option>
+        	  <option>2</option>
+        	  <option>3</option>
+        	  <option>4</option>
+        	  <option>5</option>
+        	</select>
+        </li>
+    </ul>
+</form>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;form&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;list-form&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;form-field&quot;</span><span class="nt">&gt;</span>
+        	<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;input&quot;</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;email&quot;</span> <span class="nt">/&gt;</span>
+        	<span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this field<span class="nt">&lt;/small&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;form-field&quot;</span><span class="nt">&gt;</span>
+        	<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;input&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;first name&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;form-field&quot;</span><span class="nt">&gt;</span>
+        	<span class="nt">&lt;select&gt;</span>
+        	  <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
+        	  <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
+        	  <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
+        	  <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
+        	  <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
+        	<span class="nt">&lt;/select&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>form-textarea</tt>
+  <p>
+	<label for="textarea">Textarea <abbr title="Required">*</abbr></label>
+	<textarea id="textarea" class="input" rows="8" cols="32" required></textarea>
+	<small class="note">Note about this field</small>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;textarea&quot;</span><span class="nt">&gt;</span>Textarea <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/label&gt;</span>
+	<span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">&quot;textarea&quot;</span> <span class="na">class=</span><span class="s">&quot;input&quot;</span> <span class="na">rows=</span><span class="s">&quot;8&quot;</span> <span class="na">cols=</span><span class="s">&quot;32&quot;</span> <span class="na">required</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+	<span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this field<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>input-checkbox-disabled</tt>
+  <p>
+    <label for="checkbox"><input id="checkbox" type="checkbox" disabled/> Disabled checkbox</label>
+    <small class="note">Note about this field</small>
+<p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">disabled</span><span class="nt">/&gt;</span> Disabled checkbox<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this field<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>input-checkbox</tt>
+  <p class="field">
+    <label for="checkbox"><input id="checkbox" type="checkbox"/> Checkbox</label>
+    <small class="note">Note about this field</small>
+<p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;field&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">/&gt;</span> Checkbox<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this field<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>input-email</tt>
+  <p class="field">
+    <label for="email">Email address <abbr title="Required">*</abbr></label>
+    <input id="email" type="email" placeholder="you@example.com" required/>
+    <small class="note">Note about this field</small>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;field&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;email&quot;</span><span class="nt">&gt;</span>Email address <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;email&quot;</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;you@example.com&quot;</span> <span class="na">required</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this field<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>input-password</tt>
+  <p class="field">
+    <label for="password">Password <abbr title="Required">*</abbr></label>
+    <input id="password" type="password" required/>
+    <small class="note">Note about this field</small>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;field&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;password&quot;</span><span class="nt">&gt;</span>Password <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;password&quot;</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">required</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this field<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>input-search</tt>
+  <p class="field">
+    <input type="search" placeholder="Search" role="search" /><input type="submit" value="Go" />
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;field&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;search&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Search&quot;</span> <span class="na">role=</span><span class="s">&quot;search&quot;</span> <span class="nt">/&gt;&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Go&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>input-text-disabled</tt>
+  <p>
+    <label for="text-disabled">Disabled text</label>
+    <input id="text-disabled" type="text" disabled/>
+    <small class="note">Note about this field</small>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;text-disabled&quot;</span><span class="nt">&gt;</span>Disabled text<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;text-disabled&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">disabled</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this field<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>input-text</tt>
+  <p class="field">
+    <label for="text">Text <abbr title="Required">*</abbr></label>
+    <input id="text" type="text" required/>
+    <small class="note">Note about this field</small>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;field&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>Text <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;text&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">required</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this field<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>input-url</tt>
+  <p class="field">
+    <label for="url">Web address <abbr title="Required">*</abbr></label>
+    <input id="url" type="url" placeholder="http://example.com" required/>
+    <small class="note">Note about this field</small>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;field&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>Web address <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;url&quot;</span> <span class="na">type=</span><span class="s">&quot;url&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;http://example.com&quot;</span> <span class="na">required</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this field<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>select-disabled</tt>
+  <p>
+    <label for="select-disabled">Disabled select <abbr title="Required">*</abbr></label>
+    <select id="select-disabled" disabled>
+        <optgroup label="Option Group A">
+            <option>Option One</option>
+            <option>Option Two</option>
+            <option>Option Three</option>
+        </optgroup>
+        <optgroup label="Option Group B">
+            <option>Option Four</option>
+            <option>Option Five</option>
+            <option>Option Six</option>
+        </optgroup>
+    </select>
+    <small class="note">Note about this selection</small>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;select-disabled&quot;</span><span class="nt">&gt;</span>Disabled select <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/label&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;select-disabled&quot;</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;optgroup</span> <span class="na">label=</span><span class="s">&quot;Option Group A&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option One<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Two<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Three<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/optgroup&gt;</span>
+        <span class="nt">&lt;optgroup</span> <span class="na">label=</span><span class="s">&quot;Option Group B&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Four<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Five<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Six<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/optgroup&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this selection<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>select-multiple-disabled</tt>
+  <p>
+    <label for="select-multiple-disabled">Disabled multiple select <abbr title="Required">*</abbr></label>
+    <select id="select-multiple-disabled" multiple disabled>
+        <optgroup label="Option Group A">
+            <option>Option One</option>
+            <option>Option Two</option>
+            <option>Option Three</option>
+        </optgroup>
+        <optgroup label="Option Group B">
+            <option>Option Four</option>
+            <option>Option Five</option>
+            <option>Option Six</option>
+        </optgroup>
+    </select>
+    <small class="note">Note about this selection</small>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;select-multiple-disabled&quot;</span><span class="nt">&gt;</span>Disabled multiple select <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/label&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;select-multiple-disabled&quot;</span> <span class="na">multiple</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;optgroup</span> <span class="na">label=</span><span class="s">&quot;Option Group A&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option One<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Two<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Three<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/optgroup&gt;</span>
+        <span class="nt">&lt;optgroup</span> <span class="na">label=</span><span class="s">&quot;Option Group B&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Four<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Five<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Six<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/optgroup&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this selection<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>select-multiple</tt>
+  <p class="field">
+    <label for="select-multiple">Multiple select <abbr title="Required">*</abbr></label>
+    <select id="select-multiple" multiple>
+        <optgroup label="Option Group A">
+            <option>Option One</option>
+            <option>Option Two</option>
+            <option>Option Three</option>
+        </optgroup>
+        <optgroup label="Option Group B">
+            <option>Option Four</option>
+            <option>Option Five</option>
+            <option>Option Six</option>
+        </optgroup>
+    </select>
+    <small class="note">Note about this selection</small>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;field&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;select-multiple&quot;</span><span class="nt">&gt;</span>Multiple select <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/label&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;select-multiple&quot;</span> <span class="na">multiple</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;optgroup</span> <span class="na">label=</span><span class="s">&quot;Option Group A&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option One<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Two<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Three<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/optgroup&gt;</span>
+        <span class="nt">&lt;optgroup</span> <span class="na">label=</span><span class="s">&quot;Option Group B&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Four<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Five<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Six<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/optgroup&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this selection<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>select</tt>
+  <p class="field">
+    <label for="select">Select <abbr title="Required">*</abbr></label>
+    <select id="select">
+        <optgroup label="Option Group A">
+            <option>Option One</option>
+            <option>Option Two</option>
+            <option>Option Three</option>
+        </optgroup>
+        <optgroup label="Option Group B">
+            <option>Option Four</option>
+            <option>Option Five</option>
+            <option>Option Six</option>
+        </optgroup>
+    </select>
+    <small class="note">Note about this selection</small>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;field&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;select&quot;</span><span class="nt">&gt;</span>Select <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/label&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;select&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;optgroup</span> <span class="na">label=</span><span class="s">&quot;Option Group A&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option One<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Two<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Three<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/optgroup&gt;</span>
+        <span class="nt">&lt;optgroup</span> <span class="na">label=</span><span class="s">&quot;Option Group B&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Four<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Five<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option Six<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/optgroup&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this selection<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>textarea-disabled</tt>
+  <p>
+    <label for="textarea">Disabled textarea</label>
+    <textarea id="textarea" rows="8" cols="32" disabled></textarea>
+    <small class="note">Note about this field</small>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;textarea&quot;</span><span class="nt">&gt;</span>Disabled textarea<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">&quot;textarea&quot;</span> <span class="na">rows=</span><span class="s">&quot;8&quot;</span> <span class="na">cols=</span><span class="s">&quot;32&quot;</span> <span class="na">disabled</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this field<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>textarea</tt>
+  <p class="field">
+    <label for="textarea">Textarea <abbr title="Required">*</abbr></label>
+    <textarea id="textarea" rows="8" cols="32" required></textarea>
+    <small class="note">Note about this field</small>
+</p>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;field&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;textarea&quot;</span><span class="nt">&gt;</span>Textarea <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Required&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/abbr&gt;&lt;/label&gt;</span>
+    <span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">&quot;textarea&quot;</span> <span class="na">rows=</span><span class="s">&quot;8&quot;</span> <span class="na">cols=</span><span class="s">&quot;32&quot;</span> <span class="na">required</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">&quot;note&quot;</span><span class="nt">&gt;</span>Note about this field<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <a id="global"><h2>Global</h2></a>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -1716,9 +4217,9 @@
     <a href="#" class="list-group-item clearfix active">
       <h4 class="list-group-item-heading">Commercial planning permission request applications granted vs total applications, Kennington, 2012–13</h4>
         <p class="pull-right"><strong>Type:</strong> Chloropleth map</p>
-        <p><strong>First submitted:</strong> Wednesday 29 November</p>
+        <p><strong>Added:</strong> Wed 29/11/13</p>
         <p class="pull-right"><strong>Created by:</strong> Claire Ritchie</p>
-        <p><strong>Updated:</strong> Monday 19 December 2014</p>
+        <p><strong>Updated:</strong> Mon 19/12/14</p>
         <p class="pull-right">
           <span class="glyphicon glyphicon-star ratings-star-active"></span>
           <span class="glyphicon glyphicon-star ratings-star-active"></span>
@@ -1740,9 +4241,9 @@
     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item clearfix active&quot;</span><span class="nt">&gt;</span>
       <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading&quot;</span><span class="nt">&gt;</span>Commercial planning permission request applications granted vs total applications, Kennington, 2012–13<span class="nt">&lt;/h4&gt;</span>
         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;&lt;strong&gt;</span>Type:<span class="nt">&lt;/strong&gt;</span> Chloropleth map<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;p&gt;&lt;strong&gt;</span>First submitted:<span class="nt">&lt;/strong&gt;</span> Wednesday 29 November<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Added:<span class="nt">&lt;/strong&gt;</span> Wed 29/11/13<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;&lt;strong&gt;</span>Created by:<span class="nt">&lt;/strong&gt;</span> Claire Ritchie<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Updated:<span class="nt">&lt;/strong&gt;</span> Monday 19 December 2014<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Updated:<span class="nt">&lt;/strong&gt;</span> Mon 19/12/14<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>
           <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star ratings-star-active&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
           <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star ratings-star-active&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
@@ -1768,21 +4269,22 @@
   <div class="row">
   <div class="list-group col-md-8">
     <a href="#" class="list-group-item clearfix">
+      <img data-src="holder.js/240x240" class="media-object pull-left" alt="Dashboard thumbnail">
       <h4 class="list-group-item-heading">Commercial planning permission request applications granted vs total applications, Kennington, 2012–13</h4>
-        <p class="pull-right"><strong>Type:</strong> Chloropleth map</p>
-        <p><strong>First submitted:</strong> Wednesday 29 November</p>
-        <p class="pull-right"><strong>Created by:</strong> Claire Ritchie</p>
-        <p><strong>Updated:</strong> Monday 19 December 2014</p>
-        <p class="pull-right">
-          <span class="glyphicon glyphicon-star ratings-star-active"></span>
-          <span class="glyphicon glyphicon-star ratings-star-active"></span>
-          <span class="glyphicon glyphicon-star ratings-star-active"></span>
-          <span class="glyphicon glyphicon-star ratings-star-active"></span>
-          <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
-        </p>
-        <p><strong>Categories:</strong> Housing</p>
-        <p>This map shows the number of planning permission requests that have been made between January 2012 and January 2013 in the Kennington area.</p>
-      </a> <!-- class="list-group-item" -->
+      <p class="pull-right"><strong>Type:</strong> Chloropleth map</p>
+      <p><strong>Added:</strong> Wed 29/11/13</p>
+      <p class="pull-right"><strong>Created by:</strong> Claire Ritchie</p>
+      <p><strong>Updated:</strong> Mon 19/12/14</p>
+      <p class="pull-right">
+        <span class="glyphicon glyphicon-star ratings-star-active"></span>
+        <span class="glyphicon glyphicon-star ratings-star-active"></span>
+        <span class="glyphicon glyphicon-star ratings-star-active"></span>
+        <span class="glyphicon glyphicon-star ratings-star-active"></span>
+        <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+      </p>
+      <p><strong>Categories:</strong> Housing</p>
+      <p>This map shows the number of planning permission requests that have been made between January 2012 and January 2013 in the Kennington area.</p>
+    </a> <!-- class="list-group-item" -->
   </div> <!-- class="row" -->
 </div>
 
@@ -1792,21 +4294,22 @@
   <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list-group col-md-8&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item clearfix&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/240x240&quot;</span> <span class="na">class=</span><span class="s">&quot;media-object pull-left&quot;</span> <span class="na">alt=</span><span class="s">&quot;Dashboard thumbnail&quot;</span><span class="nt">&gt;</span>
       <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading&quot;</span><span class="nt">&gt;</span>Commercial planning permission request applications granted vs total applications, Kennington, 2012–13<span class="nt">&lt;/h4&gt;</span>
-        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;&lt;strong&gt;</span>Type:<span class="nt">&lt;/strong&gt;</span> Chloropleth map<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;p&gt;&lt;strong&gt;</span>First submitted:<span class="nt">&lt;/strong&gt;</span> Wednesday 29 November<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;&lt;strong&gt;</span>Created by:<span class="nt">&lt;/strong&gt;</span> Claire Ritchie<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Updated:<span class="nt">&lt;/strong&gt;</span> Monday 19 December 2014<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star ratings-star-active&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star ratings-star-active&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star ratings-star-active&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star ratings-star-active&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star ratings-star-inactive&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
-        <span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Categories:<span class="nt">&lt;/strong&gt;</span> Housing<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;p&gt;</span>This map shows the number of planning permission requests that have been made between January 2012 and January 2013 in the Kennington area.<span class="nt">&lt;/p&gt;</span>
-      <span class="nt">&lt;/a&gt;</span> <span class="c">&lt;!-- class=&quot;list-group-item&quot; --&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;&lt;strong&gt;</span>Type:<span class="nt">&lt;/strong&gt;</span> Chloropleth map<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Added:<span class="nt">&lt;/strong&gt;</span> Wed 29/11/13<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;&lt;strong&gt;</span>Created by:<span class="nt">&lt;/strong&gt;</span> Claire Ritchie<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Updated:<span class="nt">&lt;/strong&gt;</span> Mon 19/12/14<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star ratings-star-active&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star ratings-star-active&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star ratings-star-active&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star ratings-star-active&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star ratings-star-inactive&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Categories:<span class="nt">&lt;/strong&gt;</span> Housing<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>This map shows the number of planning permission requests that have been made between January 2012 and January 2013 in the Kennington area.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/a&gt;</span> <span class="c">&lt;!-- class=&quot;list-group-item&quot; --&gt;</span>
   <span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!-- class=&quot;row&quot; --&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
@@ -2035,17 +4538,63 @@
   
 
   <tt>-list-item</tt>
-  <div>
-  <h3>Housing in Lambeth</h3>
-  <div>Categories: Housing</div>
+  <div class="row">
+  <div class="list-group col-md-8">
+    <a href="#" class="list-group-item clearfix">
+    <img data-src="holder.js/240x180" class="pull-left" alt="Dashboard thumbnail">
+    <h4 class="list-group-item-heading">Lambeth Key Performance Indicators - Commissioner's Dashboard</h4>
+    <p class="pull-right"><strong>Category:</strong> Performance</p>
+    <p><strong>Added:</strong> Wed 29/11/13</p>
+    <p class="pull-right"><strong>Created by:</strong> Claire Ritchie</p>
+    <p><strong>Updated:</strong> Mon 19/12/14</p>
+    <p class="pull-right">
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+    </p>
+    <p>This dashboard shows our performance against our key performance indicators over the past six months.</p>
+    <p><strong>Tagged as:</strong>
+      <p class="label label-default">tag #1</p>
+      <p class="label label-default">tag #2</p>
+      <p class="label label-default">tag #3</p>
+      <p class="label label-default">tag #4</p>
+      <p class="label label-default">tag #5</p>
+    </p>
+    </a> <!-- class="list-group-item" -->
+  </div> <!-- class="row" -->
 </div>
 
 
   <details>
     <summary>Code</summary>
-  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div&gt;</span>
-  <span class="nt">&lt;h3&gt;</span>Housing in Lambeth<span class="nt">&lt;/h3&gt;</span>
-  <span class="nt">&lt;div&gt;</span>Categories: Housing<span class="nt">&lt;/div&gt;</span>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list-group col-md-8&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item clearfix&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/240x180&quot;</span> <span class="na">class=</span><span class="s">&quot;pull-left&quot;</span> <span class="na">alt=</span><span class="s">&quot;Dashboard thumbnail&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading&quot;</span><span class="nt">&gt;</span>Lambeth Key Performance Indicators - Commissioner&#39;s Dashboard<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;&lt;strong&gt;</span>Category:<span class="nt">&lt;/strong&gt;</span> Performance<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Added:<span class="nt">&lt;/strong&gt;</span> Wed 29/11/13<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;&lt;strong&gt;</span>Created by:<span class="nt">&lt;/strong&gt;</span> Claire Ritchie<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Updated:<span class="nt">&lt;/strong&gt;</span> Mon 19/12/14<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star ratings-star-active&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star ratings-star-active&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star ratings-star-active&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star ratings-star-active&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-star ratings-star-inactive&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>This dashboard shows our performance against our key performance indicators over the past six months.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Tagged as:<span class="nt">&lt;/strong&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;label label-default&quot;</span><span class="nt">&gt;</span>tag #1<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;label label-default&quot;</span><span class="nt">&gt;</span>tag #2<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;label label-default&quot;</span><span class="nt">&gt;</span>tag #3<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;label label-default&quot;</span><span class="nt">&gt;</span>tag #4<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;label label-default&quot;</span><span class="nt">&gt;</span>tag #5<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/a&gt;</span> <span class="c">&lt;!-- class=&quot;list-group-item&quot; --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!-- class=&quot;row&quot; --&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
   </details>
@@ -2057,18 +4606,162 @@
   
 
   <tt>-panel</tt>
-  <div>
-  <h3>Housing in Lambeth</h3>
-  <div>Categories: Housing</div>
+  <div class="row">
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Dashboard panel title</h3>
+      </div>
+      <div>
+     <img data-src="holder.js/550x260" alt="Visualisation">
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Dashboard panel title</h3>
+      </div>
+      <div>
+        <img data-src="holder.js/260x260" alt="Visualisation">
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Dashboard panel title</h3>
+      </div>
+      <div>
+        <img data-src="holder.js/260x260" alt="Visualisation">
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Dashboard panel title</h3>
+      </div>
+      <div>
+        <img data-src="holder.js/260x260" alt="Visualisation">
+      </div>
+    </div>
+  </div>
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Dashboard panel title</h3>
+        </div>
+        <div>
+          <img data-src="holder.js/260x260" alt="Visualisation">
+        </div>
+      </div>
+    </div>
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Dashboard panel title</h3>
+          </div>
+          <div>
+            <img data-src="holder.js/260x260" alt="Visualisation">
+          </div>
+        </div>
+      </div>
+        <div class="col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Dashboard panel title</h3>
+            </div>
+            <div>
+              <img data-src="holder.js/260x260" alt="Visualisation">
+            </div>
+          </div>
+        </div>
+
+      </div>
 
 
   <details>
     <summary>Code</summary>
-  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div&gt;</span>
-  <span class="nt">&lt;h3&gt;</span>Housing in Lambeth<span class="nt">&lt;/h3&gt;</span>
-  <span class="nt">&lt;div&gt;</span>Categories: Housing<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-6&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel panel-default&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-heading&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;panel-title&quot;</span><span class="nt">&gt;</span>Dashboard panel title<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div&gt;</span>
+     <span class="nt">&lt;img</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/550x260&quot;</span> <span class="na">alt=</span><span class="s">&quot;Visualisation&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-3&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel panel-default&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-heading&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;panel-title&quot;</span><span class="nt">&gt;</span>Dashboard panel title<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/260x260&quot;</span> <span class="na">alt=</span><span class="s">&quot;Visualisation&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-3&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel panel-default&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-heading&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;panel-title&quot;</span><span class="nt">&gt;</span>Dashboard panel title<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/260x260&quot;</span> <span class="na">alt=</span><span class="s">&quot;Visualisation&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-3&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel panel-default&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-heading&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;panel-title&quot;</span><span class="nt">&gt;</span>Dashboard panel title<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/260x260&quot;</span> <span class="na">alt=</span><span class="s">&quot;Visualisation&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-3&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel panel-default&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-heading&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;panel-title&quot;</span><span class="nt">&gt;</span>Dashboard panel title<span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/260x260&quot;</span> <span class="na">alt=</span><span class="s">&quot;Visualisation&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-3&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel panel-default&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-heading&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;panel-title&quot;</span><span class="nt">&gt;</span>Dashboard panel title<span class="nt">&lt;/h3&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/260x260&quot;</span> <span class="na">alt=</span><span class="s">&quot;Visualisation&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-3&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel panel-default&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-heading&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;panel-title&quot;</span><span class="nt">&gt;</span>Dashboard panel title<span class="nt">&lt;/h3&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div&gt;</span>
+              <span class="nt">&lt;img</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/260x260&quot;</span> <span class="na">alt=</span><span class="s">&quot;Visualisation&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+
+      <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
   </details>
 
@@ -2302,9 +4995,9 @@
       <h4 class="list-group-item-heading">Census data 2009/10 - Households Below Average Income</h4>
       <p class="pull-right"> <strong>Uploaded by:</strong> <a href="#">Jason Silverman</a></p>
       <p><strong>Source:</strong> <a href="#">UK Office of National Statistics</a></p>
-      <p class="pull-right"><strong>Added:</strong> Wednesday 29 November 2014</p>
+      <p class="pull-right"><strong>Added:</strong> Wed 29/11/14</p>
       <p><strong>Source URL:</strong> <a href="http://research.dwp.gov.uk/asd/index.php?page=hbai">http://research.dwp.gov.uk/asd/index.php?page=hbai</a></p>
-      <p class="pull-right"><strong>Updated:</strong> Monday 19 December 2014</p>
+      <p class="pull-right"><strong>Updated:</strong> Mon 19/12/14</p>
       <strong>Columns available:</strong>
         <p class="label label-default">user-defined tag #1</p>
         <p class="label label-default">user-defined tag #2</p>
@@ -2332,9 +5025,9 @@
       <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading&quot;</span><span class="nt">&gt;</span>Census data 2009/10 - Households Below Average Income<span class="nt">&lt;/h4&gt;</span>
       <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;strong&gt;</span>Uploaded by:<span class="nt">&lt;/strong&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Jason Silverman<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
       <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Source:<span class="nt">&lt;/strong&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>UK Office of National Statistics<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;&lt;strong&gt;</span>Added:<span class="nt">&lt;/strong&gt;</span> Wednesday 29 November 2014<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;&lt;strong&gt;</span>Added:<span class="nt">&lt;/strong&gt;</span> Wed 29/11/14<span class="nt">&lt;/p&gt;</span>
       <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Source URL:<span class="nt">&lt;/strong&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://research.dwp.gov.uk/asd/index.php?page=hbai&quot;</span><span class="nt">&gt;</span>http://research.dwp.gov.uk/asd/index.php?page=hbai<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;&lt;strong&gt;</span>Updated:<span class="nt">&lt;/strong&gt;</span> Monday 19 December 2014<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;&lt;strong&gt;</span>Updated:<span class="nt">&lt;/strong&gt;</span> Mon 19/12/14<span class="nt">&lt;/p&gt;</span>
       <span class="nt">&lt;strong&gt;</span>Columns available:<span class="nt">&lt;/strong&gt;</span>
         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;label label-default&quot;</span><span class="nt">&gt;</span>user-defined tag #1<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;label label-default&quot;</span><span class="nt">&gt;</span>user-defined tag #2<span class="nt">&lt;/p&gt;</span>
@@ -2368,9 +5061,9 @@
       <h4 class="list-group-item-heading">Census data 2009/10 - Households Below Average Income</h4>
       <p class="pull-right"> <strong>Uploaded by:</strong> <a href="#">Jason Silverman</a></p>
       <p><strong>Source:</strong> <a href="#">UK Office of National Statistics</a></p>
-      <p class="pull-right"><strong>Added:</strong> Wednesday 29 November 2014</p>
+      <p class="pull-right"><strong>Added:</strong> Wed 29/11/14</p>
       <p><strong>Source URL:</strong> <a href="http://research.dwp.gov.uk/asd/index.php?page=hbai">http://research.dwp.gov.uk/asd/index.php?page=hbai</a></p>
-      <p class="pull-right"><strong>Updated:</strong> Monday 19 December 2014</p>
+      <p class="pull-right"><strong>Updated:</strong> Mon 19/12/14</p>
       <strong>Columns available:</strong>
         <p class="label label-default">user-defined tag #1</p>
         <p class="label label-default">user-defined tag #2</p>
@@ -2398,9 +5091,9 @@
       <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading&quot;</span><span class="nt">&gt;</span>Census data 2009/10 - Households Below Average Income<span class="nt">&lt;/h4&gt;</span>
       <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;strong&gt;</span>Uploaded by:<span class="nt">&lt;/strong&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Jason Silverman<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
       <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Source:<span class="nt">&lt;/strong&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>UK Office of National Statistics<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;&lt;strong&gt;</span>Added:<span class="nt">&lt;/strong&gt;</span> Wednesday 29 November 2014<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;&lt;strong&gt;</span>Added:<span class="nt">&lt;/strong&gt;</span> Wed 29/11/14<span class="nt">&lt;/p&gt;</span>
       <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Source URL:<span class="nt">&lt;/strong&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://research.dwp.gov.uk/asd/index.php?page=hbai&quot;</span><span class="nt">&gt;</span>http://research.dwp.gov.uk/asd/index.php?page=hbai<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;&lt;strong&gt;</span>Updated:<span class="nt">&lt;/strong&gt;</span> Monday 19 December 2014<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;&lt;strong&gt;</span>Updated:<span class="nt">&lt;/strong&gt;</span> Mon 19/12/14<span class="nt">&lt;/p&gt;</span>
       <span class="nt">&lt;strong&gt;</span>Columns available:<span class="nt">&lt;/strong&gt;</span>
         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;label label-default&quot;</span><span class="nt">&gt;</span>user-defined tag #1<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;label label-default&quot;</span><span class="nt">&gt;</span>user-defined tag #2<span class="nt">&lt;/p&gt;</span>
@@ -2962,8 +5655,116 @@
   
   
 
-  <tt>-files-list-footer</tt>
-  <div id="footer">
+  <tt>-files-list-item</tt>
+  <div class="row">
+  <div class="col-md-4">
+    <div class="list-group">
+      <a href="#" class="list-group-item">
+        <img class="pull-left media-object" data-src="holder.js/40x40" class="pull-left" alt="barchart icon">
+        <h4 class="list-group-item-heading media-body">Residents survey – Wave 12 community outcomes</h4>
+        <p class="small list-group-item-text media-body"> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-4&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list-group&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;pull-left media-object&quot;</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/40x40&quot;</span> <span class="na">class=</span><span class="s">&quot;pull-left&quot;</span> <span class="na">alt=</span><span class="s">&quot;barchart icon&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading media-body&quot;</span><span class="nt">&gt;</span>Residents survey – Wave 12 community outcomes<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;small list-group-item-text media-body&quot;</span><span class="nt">&gt;</span> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>-files-list</tt>
+  <div class="row">
+  <div class="col-md-4">
+    <div class="list-group">
+      <a href="#" class="list-group-item">
+      <img class="pull-left media-object" data-src="holder.js/40x40" class="pull-left" alt="barchart icon">
+      <h4 class="list-group-item-heading media-body">Residents survey – Wave 12 community outcomes</h4>
+      <p class="small list-group-item-text media-body"> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf</p>
+      </a>
+
+      <a href="#" class="list-group-item">
+      <img class="pull-left media-object" data-src="holder.js/40x40" class="pull-left" alt="barchart icon">
+      <h4 class="list-group-item-heading media-body">Residents survey – Wave 12 community outcomes</h4>
+      <p class="small list-group-item-text media-body"> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf</p>
+      </a>
+
+      <a href="#" class="list-group-item">
+      <img class="pull-left media-object" data-src="holder.js/40x40" class="pull-left" alt="barchart icon">
+      <h4 class="list-group-item-heading media-body">Residents survey – Wave 12 community outcomes</h4>
+      <p class="small list-group-item-text media-body"> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf</p>
+      </a>
+
+      <a href="#" class="list-group-item">
+      <img class="pull-left media-object" data-src="holder.js/40x40" class="pull-left" alt="barchart icon">
+      <h4 class="list-group-item-heading media-body">Residents survey – Wave 12 community outcomes</h4>
+      <p class="small list-group-item-text media-body"> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+  <details>
+    <summary>Code</summary>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-4&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list-group&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;pull-left media-object&quot;</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/40x40&quot;</span> <span class="na">class=</span><span class="s">&quot;pull-left&quot;</span> <span class="na">alt=</span><span class="s">&quot;barchart icon&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading media-body&quot;</span><span class="nt">&gt;</span>Residents survey – Wave 12 community outcomes<span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;small list-group-item-text media-body&quot;</span><span class="nt">&gt;</span> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;pull-left media-object&quot;</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/40x40&quot;</span> <span class="na">class=</span><span class="s">&quot;pull-left&quot;</span> <span class="na">alt=</span><span class="s">&quot;barchart icon&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading media-body&quot;</span><span class="nt">&gt;</span>Residents survey – Wave 12 community outcomes<span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;small list-group-item-text media-body&quot;</span><span class="nt">&gt;</span> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;pull-left media-object&quot;</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/40x40&quot;</span> <span class="na">class=</span><span class="s">&quot;pull-left&quot;</span> <span class="na">alt=</span><span class="s">&quot;barchart icon&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading media-body&quot;</span><span class="nt">&gt;</span>Residents survey – Wave 12 community outcomes<span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;small list-group-item-text media-body&quot;</span><span class="nt">&gt;</span> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;pull-left media-object&quot;</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/40x40&quot;</span> <span class="na">class=</span><span class="s">&quot;pull-left&quot;</span> <span class="na">alt=</span><span class="s">&quot;barchart icon&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading media-body&quot;</span><span class="nt">&gt;</span>Residents survey – Wave 12 community outcomes<span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;small list-group-item-text media-body&quot;</span><span class="nt">&gt;</span> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+  </details>
+
+  <hr/>
+
+  
+  
+  
+
+  <tt>-visualisations-list-footer</tt>
+  <div id="row">
   <h3>Related visualisations</h3>
   <div class="container">
     <div class="col-sm-6 col-md-3">
@@ -3053,7 +5854,7 @@
 
   <details>
     <summary>Code</summary>
-  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;footer&quot;</span><span class="nt">&gt;</span>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;h3&gt;</span>Related visualisations<span class="nt">&lt;/h3&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-sm-6 col-md-3&quot;</span><span class="nt">&gt;</span>
@@ -3147,126 +5948,68 @@
   
   
 
-  <tt>-files-list-item</tt>
-  <div class="row">
-  <div class="col-md-4">
-    <div class="list-group">
-      <a href="#" class="list-group-item">
-        <img class="pull-left media-object" src="/images/thmb-barchart.png" alt="barchart icon" width=40px height=40px>
-        <h4 class="list-group-item-heading media-body">Residents survey – Wave 12 community outcomes</h4>
-        <p class="small list-group-item-text media-body"> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf</p>
-      </a>
-    </div>
-  </div>
-</div>
-
-
-  <details>
-    <summary>Code</summary>
-  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-4&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list-group&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;pull-left media-object&quot;</span> <span class="na">src=</span><span class="s">&quot;/images/thmb-barchart.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;barchart icon&quot;</span> <span class="na">width=</span><span class="s">40px</span> <span class="na">height=</span><span class="s">40px</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading media-body&quot;</span><span class="nt">&gt;</span>Residents survey – Wave 12 community outcomes<span class="nt">&lt;/h4&gt;</span>
-        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;small list-group-item-text media-body&quot;</span><span class="nt">&gt;</span> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf<span class="nt">&lt;/p&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-
-  </details>
-
-  <hr/>
-
-  
-  
-  
-
-  <tt>-files-list</tt>
-  <div class="row">
-  <div class="col-md-4">
-    <div class="list-group">
-      <a href="#" class="list-group-item">
-      <img class="pull-left media-object" src="/images/thmb-barchart.png" alt="barchart icon" width=40px height=40px>
-      <h4 class="list-group-item-heading media-body">Residents survey – Wave 12 community outcomes</h4>
-      <p class="small list-group-item-text media-body"> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf</p>
-      </a>
-
-      <a href="#" class="list-group-item">
-      <img class="pull-left media-object" src="/images/thmb-barchart.png" alt="barchart icon" width=40px height=40px>
-      <h4 class="list-group-item-heading media-body">Residents survey – Wave 12 community outcomes</h4>
-      <p class="small list-group-item-text media-body"> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf</p>
-      </a>
-
-      <a href="#" class="list-group-item">
-      <img class="pull-left media-object" src="/images/thmb-barchart.png" alt="barchart icon" width=40px height=40px>
-      <h4 class="list-group-item-heading media-body">Residents survey – Wave 12 community outcomes</h4>
-      <p class="small list-group-item-text media-body"> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf</p>
-      </a>
-
-      <a href="#" class="list-group-item">
-      <img class="pull-left media-object" src="/images/thmb-barchart.png" alt="barchart icon" width=40px height=40px>
-      <h4 class="list-group-item-heading media-body">Residents survey – Wave 12 community outcomes</h4>
-      <p class="small list-group-item-text media-body"> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf</p>
-      </a>
-    </div>
-  </div>
-</div>
-
-
-  <details>
-    <summary>Code</summary>
-  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-4&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list-group&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;pull-left media-object&quot;</span> <span class="na">src=</span><span class="s">&quot;/images/thmb-barchart.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;barchart icon&quot;</span> <span class="na">width=</span><span class="s">40px</span> <span class="na">height=</span><span class="s">40px</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading media-body&quot;</span><span class="nt">&gt;</span>Residents survey – Wave 12 community outcomes<span class="nt">&lt;/h4&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;small list-group-item-text media-body&quot;</span><span class="nt">&gt;</span> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf<span class="nt">&lt;/p&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;pull-left media-object&quot;</span> <span class="na">src=</span><span class="s">&quot;/images/thmb-barchart.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;barchart icon&quot;</span> <span class="na">width=</span><span class="s">40px</span> <span class="na">height=</span><span class="s">40px</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading media-body&quot;</span><span class="nt">&gt;</span>Residents survey – Wave 12 community outcomes<span class="nt">&lt;/h4&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;small list-group-item-text media-body&quot;</span><span class="nt">&gt;</span> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf<span class="nt">&lt;/p&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;pull-left media-object&quot;</span> <span class="na">src=</span><span class="s">&quot;/images/thmb-barchart.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;barchart icon&quot;</span> <span class="na">width=</span><span class="s">40px</span> <span class="na">height=</span><span class="s">40px</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading media-body&quot;</span><span class="nt">&gt;</span>Residents survey – Wave 12 community outcomes<span class="nt">&lt;/h4&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;small list-group-item-text media-body&quot;</span><span class="nt">&gt;</span> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf<span class="nt">&lt;/p&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;pull-left media-object&quot;</span> <span class="na">src=</span><span class="s">&quot;/images/thmb-barchart.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;barchart icon&quot;</span> <span class="na">width=</span><span class="s">40px</span> <span class="na">height=</span><span class="s">40px</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading media-body&quot;</span><span class="nt">&gt;</span>Residents survey – Wave 12 community outcomes<span class="nt">&lt;/h4&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;small list-group-item-text media-body&quot;</span><span class="nt">&gt;</span> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf<span class="nt">&lt;/p&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-
-  </details>
-
-  <hr/>
-
-  
-  
-  
-
   <tt>-visualisations-list-item</tt>
-  <div>
-  <h3>Housing in Lambeth</h3>
-  <div>Categories: Housing</div>
+  <div class="row">
+  <div class="col-md-4">
+    <div class="list-group">
+      <a href="#" class="list-group-item">
+      <img class="pull-left media-object" data-src="holder.js/40x40" class="pull-left" alt="barchart icon">
+      <h4 class="list-group-item-heading media-body">Residents survey – Wave 12 community outcomes</h4>
+      <p class="small list-group-item-text media-body"> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf</p>
+      </a>
+
+      <a href="#" class="list-group-item">
+      <img class="pull-left media-object" data-src="holder.js/40x40" class="pull-left" alt="barchart icon">
+      <h4 class="list-group-item-heading media-body">Residents survey – Wave 12 community outcomes</h4>
+      <p class="small list-group-item-text media-body"> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf</p>
+      </a>
+
+      <a href="#" class="list-group-item">
+      <img class="pull-left media-object" data-src="holder.js/40x40" class="pull-left" alt="barchart icon">
+      <h4 class="list-group-item-heading media-body">Residents survey – Wave 12 community outcomes</h4>
+      <p class="small list-group-item-text media-body"> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf</p>
+      </a>
+
+      <a href="#" class="list-group-item">
+      <img class="pull-left media-object" data-src="holder.js/40x40" class="pull-left" alt="barchart icon">
+      <h4 class="list-group-item-heading media-body">Residents survey – Wave 12 community outcomes</h4>
+      <p class="small list-group-item-text media-body"> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf</p>
+      </a>
+    </div>
+  </div>
 </div>
 
 
   <details>
     <summary>Code</summary>
-  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div&gt;</span>
-  <span class="nt">&lt;h3&gt;</span>Housing in Lambeth<span class="nt">&lt;/h3&gt;</span>
-  <span class="nt">&lt;div&gt;</span>Categories: Housing<span class="nt">&lt;/div&gt;</span>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-4&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list-group&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;pull-left media-object&quot;</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/40x40&quot;</span> <span class="na">class=</span><span class="s">&quot;pull-left&quot;</span> <span class="na">alt=</span><span class="s">&quot;barchart icon&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading media-body&quot;</span><span class="nt">&gt;</span>Residents survey – Wave 12 community outcomes<span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;small list-group-item-text media-body&quot;</span><span class="nt">&gt;</span> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;pull-left media-object&quot;</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/40x40&quot;</span> <span class="na">class=</span><span class="s">&quot;pull-left&quot;</span> <span class="na">alt=</span><span class="s">&quot;barchart icon&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading media-body&quot;</span><span class="nt">&gt;</span>Residents survey – Wave 12 community outcomes<span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;small list-group-item-text media-body&quot;</span><span class="nt">&gt;</span> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;pull-left media-object&quot;</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/40x40&quot;</span> <span class="na">class=</span><span class="s">&quot;pull-left&quot;</span> <span class="na">alt=</span><span class="s">&quot;barchart icon&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading media-body&quot;</span><span class="nt">&gt;</span>Residents survey – Wave 12 community outcomes<span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;small list-group-item-text media-body&quot;</span><span class="nt">&gt;</span> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;pull-left media-object&quot;</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/40x40&quot;</span> <span class="na">class=</span><span class="s">&quot;pull-left&quot;</span> <span class="na">alt=</span><span class="s">&quot;barchart icon&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading media-body&quot;</span><span class="nt">&gt;</span>Residents survey – Wave 12 community outcomes<span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;small list-group-item-text media-body&quot;</span><span class="nt">&gt;</span> 20131031 Residents survey Wave 12 community outcomes FINAL.pdf<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
   </details>
@@ -3509,22 +6252,68 @@
 
   <tt>-step</tt>
   <wizard-progress-bar active-step="Datasets" class="ng-scope">
-<!-- ngRepeat: step in steps -->
-<div class="wizard-box ng-scope ng-binding active" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Datasets</div>
-<div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Visualization type</div>
-<div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Columns</div>
-<div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Visualize!</div>
+<div ng-view="">
+  <h2 class="ng-scope">Choose datasets</h2>
+  <wizard-progress-bar active-step="Datasets" class="ng-scope">
+  <!-- ngRepeat: step in steps -->
+  <div class="wizard-box ng-scope ng-binding active" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Select datasets</div>
+  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Select visualisation type</div>
+  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Select data columns</div>
+  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Edit visualisation</div>
+  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">Save</div>
+  </wizard-progress-bar>
+  <div class="buttons ng-scope">
+    <a href="#/select-type">
+    <div class="btn btn-primary pull-right">Select visualization type</div>
+    </a>
+  </div>
+  <div class="content ng-scope">
+    <!-- %p Browse datasets: -->
+    <div class="list-group">
+      <!-- ngRepeat: dataset in datatables | orderBy:'label' -->
+    </div>
+  </div>
+  <div class="sidebar-right ng-scope">
+    <div class="selected-data">
+      <h4>Selected datasets</h4>
+      <!-- ngRepeat: dataset in datatables | filter: {selected: true} -->
+    </div>
+  </div>
+</div>
 </wizard-progress-bar>
 
 
   <details>
     <summary>Code</summary>
   <div class="highlight"><pre><code class="html"><span class="nt">&lt;wizard-progress-bar</span> <span class="na">active-step=</span><span class="s">&quot;Datasets&quot;</span> <span class="na">class=</span><span class="s">&quot;ng-scope&quot;</span><span class="nt">&gt;</span>
-<span class="c">&lt;!-- ngRepeat: step in steps --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;wizard-box ng-scope ng-binding active&quot;</span> <span class="na">ng-class=</span><span class="s">&quot;{active: activeStep == step}&quot;</span> <span class="na">ng-repeat=</span><span class="s">&quot;step in steps&quot;</span><span class="nt">&gt;</span>Datasets<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;wizard-box ng-scope ng-binding&quot;</span> <span class="na">ng-class=</span><span class="s">&quot;{active: activeStep == step}&quot;</span> <span class="na">ng-repeat=</span><span class="s">&quot;step in steps&quot;</span><span class="nt">&gt;</span>Visualization type<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;wizard-box ng-scope ng-binding&quot;</span> <span class="na">ng-class=</span><span class="s">&quot;{active: activeStep == step}&quot;</span> <span class="na">ng-repeat=</span><span class="s">&quot;step in steps&quot;</span><span class="nt">&gt;</span>Columns<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;wizard-box ng-scope ng-binding&quot;</span> <span class="na">ng-class=</span><span class="s">&quot;{active: activeStep == step}&quot;</span> <span class="na">ng-repeat=</span><span class="s">&quot;step in steps&quot;</span><span class="nt">&gt;</span>Visualize!<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">ng-view=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">&quot;ng-scope&quot;</span><span class="nt">&gt;</span>Choose datasets<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;wizard-progress-bar</span> <span class="na">active-step=</span><span class="s">&quot;Datasets&quot;</span> <span class="na">class=</span><span class="s">&quot;ng-scope&quot;</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- ngRepeat: step in steps --&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;wizard-box ng-scope ng-binding active&quot;</span> <span class="na">ng-class=</span><span class="s">&quot;{active: activeStep == step}&quot;</span> <span class="na">ng-repeat=</span><span class="s">&quot;step in steps&quot;</span><span class="nt">&gt;</span>Select datasets<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;wizard-box ng-scope ng-binding&quot;</span> <span class="na">ng-class=</span><span class="s">&quot;{active: activeStep == step}&quot;</span> <span class="na">ng-repeat=</span><span class="s">&quot;step in steps&quot;</span><span class="nt">&gt;</span>Select visualisation type<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;wizard-box ng-scope ng-binding&quot;</span> <span class="na">ng-class=</span><span class="s">&quot;{active: activeStep == step}&quot;</span> <span class="na">ng-repeat=</span><span class="s">&quot;step in steps&quot;</span><span class="nt">&gt;</span>Select data columns<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;wizard-box ng-scope ng-binding&quot;</span> <span class="na">ng-class=</span><span class="s">&quot;{active: activeStep == step}&quot;</span> <span class="na">ng-repeat=</span><span class="s">&quot;step in steps&quot;</span><span class="nt">&gt;</span>Edit visualisation<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;wizard-box ng-scope ng-binding&quot;</span> <span class="na">ng-class=</span><span class="s">&quot;{active: activeStep == step}&quot;</span> <span class="na">ng-repeat=</span><span class="s">&quot;step in steps&quot;</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/wizard-progress-bar&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;buttons ng-scope&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#/select-type&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary pull-right&quot;</span><span class="nt">&gt;</span>Select visualization type<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;content ng-scope&quot;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- %p Browse datasets: --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list-group&quot;</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- ngRepeat: dataset in datatables | orderBy:&#39;label&#39; --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sidebar-right ng-scope&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;selected-data&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4&gt;</span>Selected datasets<span class="nt">&lt;/h4&gt;</span>
+      <span class="c">&lt;!-- ngRepeat: dataset in datatables | filter: {selected: true} --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/wizard-progress-bar&gt;</span></code></pre></div>
 
   </details>
@@ -3536,18 +6325,30 @@
   
 
   <tt>-vistype-list-item</tt>
-  <div>
-  <h3>Housing in Lambeth</h3>
-  <div>Categories: Housing</div>
-</div>
+  <div class="row">
+  <div class="list-group col-md-8">
+    <a href="#" class="list-group-item clearfix">
+      <img class="pull-left media-object" data-src="holder.js/40x40" class="pull-left" alt="barchart icon">
+      <p class="pull-right" href="#"><span class="glyphicon glyphicon-ok-sign"></span></p>
+      <h4 class="list-group-item-heading">Bar chart</h4>
+      <p>A bar chart or bar graph is a chart with rectangular bars with lengths proportional to the quantitative values that they represent.</p>
+    </a> <!-- class="list-group-item" -->
+  </div> <!-- class="list-group" -->
+</div> <!-- class="row" -->
 
 
   <details>
     <summary>Code</summary>
-  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div&gt;</span>
-  <span class="nt">&lt;h3&gt;</span>Housing in Lambeth<span class="nt">&lt;/h3&gt;</span>
-  <span class="nt">&lt;div&gt;</span>Categories: Housing<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list-group col-md-8&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item clearfix&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;pull-left media-object&quot;</span> <span class="na">data-src=</span><span class="s">&quot;holder.js/40x40&quot;</span> <span class="na">class=</span><span class="s">&quot;pull-left&quot;</span> <span class="na">alt=</span><span class="s">&quot;barchart icon&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-ok-sign&quot;</span><span class="nt">&gt;&lt;/span&gt;&lt;/p&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading&quot;</span><span class="nt">&gt;</span>Bar chart<span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;p&gt;</span>A bar chart or bar graph is a chart with rectangular bars with lengths proportional to the quantitative values that they represent.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/a&gt;</span> <span class="c">&lt;!-- class=&quot;list-group-item&quot; --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!-- class=&quot;list-group&quot; --&gt;</span>
+<span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!-- class=&quot;row&quot; --&gt;</span></code></pre></div>
 
   </details>
 
@@ -4411,6 +7212,12 @@
   </div>
 
 </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.min.js"></script>
 
 
     </body>
