@@ -8,10 +8,10 @@
 
     <!-- Custom CSS -->
     <!-- Custom styles for this template -->
-    <link href="navbar-fixed-top.css" rel="stylesheet">
+    <link href="{{ "navbar-fixed-top.css" | prepend: site.baseurl }}" rel="stylesheet">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <script src="/bower_components/holderjs/holder.js"></script>
+    <script src="{{ "/bower_components/holderjs/holder.js" | prepend: site.baseurl }}"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>

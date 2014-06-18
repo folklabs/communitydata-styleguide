@@ -2,7 +2,7 @@
 title: CommunityData Styleguide
 email: info@folklabs.com
 description: "Community Data is a web project to offer citizens better ways to create open data visualizations."
-baseurl: ""
+baseurl: /communitydata-styleguide
 url: "http://folklabs.com"
 
 # Build settings
