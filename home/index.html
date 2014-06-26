@@ -7,7 +7,7 @@
     <title>CommunityData Styleguide</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Community Data is a web project to offer citizens better ways to create open data visualizations.">
-    <link rel="canonical" href="http://folklabs.com/communitydata-styleguide/wizard-step-2/">
+    <link rel="canonical" href="http://folklabs.com/communitydata-styleguide/home/">
 
     <!-- Custom CSS -->
     <!-- Custom styles for this template -->
@@ -70,78 +70,138 @@
 
     <div class="page-content">
       <div class="wrap">
-      <wizard-progress-bar active-step="Datasets" class="ng-scope">
-<div ng-view="">
-  <h2 class="ng-scope">Visualisation builder: select visualisation type</h2>
-  <wizard-progress-bar active-step="Datasets" class="ng-scope">
-  <!-- ngRepeat: step in steps -->
-  <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps"><span class="glyphicon glyphicon-ok-sign"></span> Select datasets</div>
-  <div class="wizard-box ng-scope ng-binding active" ng-class="{active: activeStep == step}" ng-repeat="step in steps">2. Select visualisation type</div>
-  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">3. Select data columns</div>
-  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">4. Edit visualisation</div>
-  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">5. Add metadata</div>
-  </wizard-progress-bar>
-  <div class="buttons ng-scope">
-    <a href="/wizard-step-1">
-    <div class="btn btn-default pull-left"><span class="glyphicon glyphicon-chevron-left"></span> Back</div>
-    </a>
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="container">
+  <div class="jumbotron">
+    <h1>COD</h1>
+    <p>Create & share beautiful visualisations of <em>your</em> local data with COD</p>
+    <p><a href="#" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
   </div>
-  <div class="buttons ng-scope">
-    <a href="/wizard-step-3">
-    <div class="btn btn-primary pull-right">Select data columns</div>
-    </a>
-  </div>
-  <div class="content ng-scope">
-    <!-- %p Browse datasets: -->
-    <div class="list-group">
-      <!-- ngRepeat: dataset in datatables | orderBy:'label' -->
+  <div class="row">
+    <div class="col-md-12">
+      <h3>What can I do with COD?</h3>
+      <p class="lead">COD draws beautiful live open data chart and map visualisations from your local data sources which you share and embed in a dashboard, data story or on your own web pages and documents.</p>
     </div>
   </div>
-  <div class="ng-scope">
-    <div class="selected-data">
-      <h4>Select the type of visualisation you wish to plot</h4>
-      <hr>
-      <!-- ngRepeat: dataset in datatables | filter: {selected: true} -->
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="well">
+        <p class="lead">Add your own local datasets or explore open data from across the web</p>
+        <button type="button" class="center-block btn btn-primary">Let’s go</button>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="well">
+        <p class="lead">Create beautiful visualisations, dashboards and data stories</p>
+        <button type="button" class="center-block btn btn-primary">Create</button>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="well">
+        <p class="lead">Share your visualisations on COD, ask for reviews or embed them your own site</p>
+        <button type="button" class="center-block btn btn-primary">Share</button>
+      </div>
     </div>
   </div>
-</div>
-</wizard-progress-bar>
-
-<div id="row">
-
-  <div class="col-sm-6 col-md-3">
-    <button type="button" class="btn btn-default btn-block">
-    <img data-src="holder.js/245x245" alt="Thumbnail">
-    </button>
-    <h4>Bar chart</h4>
-    <p>A bar chart or bar graph is a chart with rectangular bars with lengths proportional to the quantitative values that they represent.</p>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Why?</h3>
+      <p>Having seen a need among local community groups for accurate, persuasive and well-presented data visualisations, we decided to build a platform where they could create data visualisations and be mentored by expert volunteer mentors.</p>
+      <p>But there was no platform or space to build a strong, networked community of data experts who could voluntarily contribute to creating such visualisations. In fact, there is some controversy over data visualisation at present. The tools for producing such visualisations are often controlled by graphic designers and other creatives who do not possess the necessary skills to ensure their visualisations are accurate and robust.</p>
+    </div>
+    <div class="col-md-6">
+      <h3>Who is it for?</h3>
+      <p>COD is for everyone who wants to create beautiful, accurate, shareable data visualisations:
+      <ul>
+        <li>Perhaps you’re a local community group leader trying to win a funding bid by presenting compelling evidence of the need for money to be donated to your cause or project?</li>
+        <li>You might be a local government official with dozens of questions and not enough internal data experts to answer them all.</li>
+        <li>Or you might be an entrepreneur seeking a reliable way to explore information about an area where you hope to start a business.</li>
+        <li>You may even just be a citizen, concerned about an issue affecting you in your local area that you want to do something about.</li>
+      </ul>
+      </p>
+    </div>
   </div>
 
-<div class="col-sm-6 col-md-3">
-  <button type="button" class="btn btn-default btn-block">
-    <img data-src="holder.js/245x245" alt="Thumbnail">
-  </button>
-  <h4>Pie chart</h4>
-  <p>A pie chart is a circular chart divided into sectors, illustrating numerical proportion. In a pie chart, the arc length of each sector (and consequently its central angle and area), is proportional to the quantity it represents.</p>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Here’s some we made earlier</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="well">
+        <p class="lead">You can already create as many bar charts, pie charts and map visualisations as you want and we’re adding more chart types all the time.</p>
+        <button type="button" class="center-block btn btn-primary">Visualisations</button>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="well">
+        <p class="lead">Dashboards allow you to gather together multiple visualisations into one screen and...</p>
+        <button type="button" class="center-block btn btn-primary">Dashboards</button>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="well">
+        <p class="lead">Data stories blend visualisations with text, allowing you to tell more detaild stories about your data.</p>
+        <button type="button" class="center-block btn btn-primary">Data stories</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Want to help?</h3>
+      <p class="lead">Anyone can register and contribute. Because COD is an open source project we need help from the amazing developer community to support it. And we need anyone who can write, design or mentor our community to ensure the visualisations published by users are of the highest quality.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="well">
+        <p class="lead">If you’re a data ninja or infographics rockstar, our members need your help and eye for detail.</p>
+        <button type="button" class="center-block btn btn-primary">Join our mentors</button>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="well">
+        <p class="lead">Got l33t D3 or JS skillz? Help us build more renderers so we can add new visualisation types.</p>
+        <button type="button" class="center-block btn btn-primary">Develop plugins</button>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="well">
+        <p class="lead">Deploy COD on your own servers and become part of our developer network.</p>
+        <button type="button" class="center-block btn btn-primary">Download</button>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="well">
+        <p class="lead">Local councils and other organisations, with spare developer capacity to offer, can join our core team.</p>
+        <button type="button" class="center-block btn btn-primary">Join our team</button>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="well">
+          <p class="lead">As an opensource project, COD cannot exist without your ongoing support. If you would like to donate to our work, please use the XYZ link below. All donors are recognised on our Donors page</p>
+          <button type="button" class="center-block btn btn-primary btn-lg">Donate</button>
+        </div>
+      </div>
+    </div>
 </div>
 
-<div class="col-sm-6 col-md-3">
-  <button type="button" class="btn btn-default btn-block">
-    <img data-src="holder.js/245x245" alt="Thumbnail">
-  </button>
-  <h4>Line chart</h4>
-  <p>A line chart or line graph is a type of chart which displays information as a series of data points called 'markers' connected by straight line segments.</p>
-</div>
 
-<div class="col-sm-6 col-md-3">
-  <button type="button" class="btn btn-default btn-block">
-    <img data-src="holder.js/245x245" alt="Thumbnail">
-  </button>
-  <h4>Map plot</h4>
-  <p>Maps are symbolic depictions highlighting the relationships between elements such as objects, regions and themes within a territorial space.</p>
-</div>
 
-</div>
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<script src="../../assets/js/docs.min.js"></script>
 
       </div>
     </div>

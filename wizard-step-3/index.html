@@ -26,7 +26,7 @@
     <body>
 
         <!-- Fixed navbar -->
-    <header class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <header class="navbar navbar-default navbar-fixed-top clearfix" role="navigation">
         <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -42,21 +42,21 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
-            <li><a href="/datasets">Datasets</a></li>
-            <li><a href="/visualisations">Visualisations</a></li>
-            <li><a href="/dashboards">Dashboards</a></li>
-            <li><a href="/datastories">Data stories</a></li>
+            <li class="active"><a href="/communitydata-styleguide/home"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="/communitydata-styleguide/datasets">Datasets</a></li>
+            <li><a href="/communitydata-styleguide/visualizations">Visualisations</a></li>
+            <li><a href="/communitydata-styleguide/dashboards">Dashboards</a></li>
+            <li><a href="/communitydata-styleguide/data-stories">Data stories</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/help">Help</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="help">Help</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-plus-sign"></span> Add <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="/">Dataset</a></li>
-                <li><a href="#">Visualisation</a></li>
+                <li><a href="#">Dataset</a></li>
+                <li><a href="wizard-step-1">Visualisation</a></li>
                 <li><a href="#">Dashboard</a></li>
                 <li><a href="#">Data story</a></li>
               </ul>
@@ -79,7 +79,7 @@
   <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps"><span class="glyphicon glyphicon-ok-sign"></span> Select visualisation type</div>
   <div class="wizard-box ng-scope ng-binding active" ng-class="{active: activeStep == step}" ng-repeat="step in steps">3. Select data columns</div>
   <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">4. Edit visualisation</div>
-  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">5. Publish visualisation</div>
+  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">5. Add metadata</div>
   </wizard-progress-bar>
   <div class="buttons ng-scope">
     <a href="/wizard-step-2">
@@ -305,6 +305,26 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <p>Contact us:</p>
+        <p>Email</p>
+        <p>Facebook</p>
+        <p>Twitter</p>
+        <p>Phone</p>
+        <p>Address:</p>
+      </div>
+      <div class="col-md-8">
+        <p>Credits:</p>
+        <p>Lambeth Council</p>
+        <p>Giles Gibson/Herne Hill?</p>
+        <p>Data Unity</p>
+        <p>Folk Labs</p>
+        <p>Perini Networks</p>
+      </div>
+
+
     </div>
   </div>
 </div>
