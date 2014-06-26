@@ -13,13 +13,13 @@ layout: drupal-page
   <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">5. Add metadata</div>
   </wizard-progress-bar>
   <div class="buttons ng-scope">
-    <a href="/wizard-step-2">
+    <a href="{{ site.baseurl }}/wizard-step-2">
     <div class="btn btn-default pull-left"><span class="glyphicon glyphicon-chevron-left"></span> Back</div>
     </a>
   </div>
   <div class="buttons ng-scope">
-    <a href="/wizard-step-4">
-    <div class="btn btn-primary pull-right">Edit visualization</div>
+    <a href="{{ site.baseurl }}/wizard-step-4">
+    <div class="btn btn-primary pull-right">Edit visualization <span class="glyphicon glyphicon-chevron-right"></span></div>
     </a>
   </div>
   <div class="content ng-scope">
