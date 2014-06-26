@@ -36,7 +36,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">COD</a>
+          <a class="navbar-brand" href="/communitydata-styleguide/home">COD</a>
         </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -49,19 +49,19 @@
             <li><a href="/communitydata-styleguide/data-stories">Data stories</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="contact">Contact</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="help">Help</a></li>
+            <li><a href="/communitydata-styleguide/contact">Contact</a></li>
+            <li><a href="/communitydata-styleguide/about">About</a></li>
+            <li><a href="/communitydata-styleguide/help">Help</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-plus-sign"></span> Add <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Dataset</a></li>
-                <li><a href="wizard-step-1">Visualisation</a></li>
+                <li><a href="/communitydata-styleguide/wizard-step-1">Visualisation</a></li>
                 <li><a href="#">Dashboard</a></li>
                 <li><a href="#">Data story</a></li>
               </ul>
             </li>
-            <li><a href="/user"><img src ="../images/user-avatar-gilesgibson.png"> Giles Gibson</a></li>
+            <li><a href="/communitydata-styleguide/user-ggibson"><img src ="../images/user-avatar-gilesgibson.png"> Giles Gibson</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -82,8 +82,8 @@
   <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">5. Add metadata</div>
   </wizard-progress-bar>
   <div class="buttons ng-scope">
-    <a href="/wizard-step-2">
-    <div class="btn btn-primary pull-right">Select visualization type</div>
+    <a href="/communitydata-styleguide/wizard-step-2">
+    <div class="btn btn-primary pull-right">Select visualization type <span class="glyphicon glyphicon-chevron-right"></span></div>
     </a>
   </div>
   <div class="content ng-scope">
@@ -102,8 +102,30 @@
       <!-- ngRepeat: dataset in datatables | filter: {selected: true} -->
     </div>
   </div>
+  <!-- List item 1 -->
   <div class="list-group col-md-8">
     <div href="#" class="list-group-item clearfix">
+      <p class="pull-right">
+        <button class=" btn btn-success"><span class="glyphicon glyphicon-plus-sign"></span> Select</button>
+      </p>
+      <h4 class="list-group-item-heading">Census data 2009/10 - Households Below Average Income</h4>
+      <p class="pull-right"> <strong>Uploaded by:</strong> <a href="#">Jason Silverman</a></p>
+      <p class=""><strong>Source:</strong> <a href="#">UK Office of National Statistics</a></p>
+      <p class="pull-right"><strong>Added:</strong> Wed 29/11/14</p>
+      <p class=""><strong>Source URL:</strong> <a href="http://research.dwp.gov.uk/asd/index.php?page=hbai">http://research.dwp.gov.uk/asd/index.php?page=hbai</a></p>
+      <p class="pull-right"><strong>Updated:</strong> Mon 19/12/14</p>
+      <p class="">
+        <strong>Columns available:</strong>
+        <p class="label label-default">user-defined tag #1</p>
+        <p class="label label-default">user-defined tag #2</p>
+        <p class="label label-default">user-defined tag #3</p>
+        <p class="label label-default">user-defined tag #4</p>
+        <p class="label label-default">user-defined tag #5</p>
+      </p>
+    </div>
+
+    <!-- List item 2 -->
+    <div href="#" class="list-group-item clearfix">
       <a class="pull-right" href="#"><span class="glyphicon glyphicon-plus-sign"></span></a>
       <h4 class="list-group-item-heading">Census data 2009/10 - Households Below Average Income</h4>
       <p class="pull-right"> <strong>Uploaded by:</strong> <a href="#">Jason Silverman</a></p>
@@ -117,13 +139,6 @@
       <p class="label label-default">user-defined tag #3</p>
       <p class="label label-default">user-defined tag #4</p>
       <p class="label label-default">user-defined tag #5</p>
-      <p class="pull-right">
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
-      </p>
     </div>
     <div href="#" class="list-group-item clearfix">
       <a class="pull-right" href="#"><span class="glyphicon glyphicon-plus-sign"></span></a>
@@ -139,13 +154,6 @@
       <p class="label label-default">user-defined tag #3</p>
       <p class="label label-default">user-defined tag #4</p>
       <p class="label label-default">user-defined tag #5</p>
-      <p class="pull-right">
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
-      </p>
     </div>
     <div href="#" class="list-group-item clearfix">
       <a class="pull-right" href="#"><span class="glyphicon glyphicon-plus-sign"></span></a>
@@ -161,13 +169,6 @@
       <p class="label label-default">user-defined tag #3</p>
       <p class="label label-default">user-defined tag #4</p>
       <p class="label label-default">user-defined tag #5</p>
-      <p class="pull-right">
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
-      </p>
     </div>
     <div href="#" class="list-group-item clearfix">
       <a class="pull-right" href="#"><span class="glyphicon glyphicon-plus-sign"></span></a>
@@ -183,35 +184,6 @@
       <p class="label label-default">user-defined tag #3</p>
       <p class="label label-default">user-defined tag #4</p>
       <p class="label label-default">user-defined tag #5</p>
-      <p class="pull-right">
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
-      </p>
-    </div>
-    <div href="#" class="list-group-item clearfix">
-      <a class="pull-right" href="#"><span class="glyphicon glyphicon-plus-sign"></span></a>
-      <h4 class="list-group-item-heading">Census data 2009/10 - Households Below Average Income</h4>
-      <p class="pull-right"> <strong>Uploaded by:</strong> <a href="#">Jason Silverman</a></p>
-      <p><strong>Source:</strong> <a href="#">UK Office of National Statistics</a></p>
-      <p class="pull-right"><strong>Added:</strong> Wed 29/11/14</p>
-      <p><strong>Source URL:</strong> <a href="http://research.dwp.gov.uk/asd/index.php?page=hbai">http://research.dwp.gov.uk/asd/index.php?page=hbai</a></p>
-      <p class="pull-right"><strong>Updated:</strong> Mon 19/12/14</p>
-      <strong>Columns available:</strong>
-      <p class="label label-default">user-defined tag #1</p>
-      <p class="label label-default">user-defined tag #2</p>
-      <p class="label label-default">user-defined tag #3</p>
-      <p class="label label-default">user-defined tag #4</p>
-      <p class="label label-default">user-defined tag #5</p>
-      <p class="pull-right">
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-active"></span>
-      <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
-      </p>
     </div>
   </div>
   <div class="col-md-4">
@@ -221,11 +193,11 @@
       <!-- List group -->
       <ul class="list-group">
         <li class="list-group-item">
-          <p class="pull-right"><a href="#"><span class="badge"><span class="glyphicon glyphicon-remove-sign"></span> remove</span></a></p>
+          <a href="#"><div class="btn btn-danger pull-right"><span class="glyphicon glyphicon-remove-sign"></span> Remove</div></a>
           <p>Census data 2009/10 – Households Below Average Income</p>
         </li>
         <li class="list-group-item">
-          <p class="pull-right"><a href="#"><span class="badge"><span class="glyphicon glyphicon-remove-sign"></span> remove</span></a></p>
+          <a href="#"><div class="btn btn-danger pull-right"><span class="glyphicon glyphicon-remove-sign"></span> Remove</div></a>
           <p>Households in temporary accommodation per 1000 households, 2011 Q2 to 2013 Q4, England, District</p>
         </li>
       </ul>
@@ -233,6 +205,39 @@
   </div>
 </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       </div>
     </div>

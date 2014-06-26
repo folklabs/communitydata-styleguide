@@ -7,7 +7,7 @@
     <title>CommunityData Styleguide</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Community Data is a web project to offer citizens better ways to create open data visualizations.">
-    <link rel="canonical" href="http://folklabs.com/communitydata-styleguide/wizard-step-4/">
+    <link rel="canonical" href="http://folklabs.com/communitydata-styleguide/user-ggibson/">
 
     <!-- Custom CSS -->
     <!-- Custom styles for this template -->
@@ -70,64 +70,146 @@
 
     <div class="page-content">
       <div class="wrap">
-      <wizard-progress-bar active-step="Datasets" class="ng-scope">
-<div ng-view="">
-  <h2 class="ng-scope">Choose datasets</h2>
-  <wizard-progress-bar active-step="Datasets" class="ng-scope">
-  <!-- ngRepeat: step in steps -->
-  <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps"><span class="glyphicon glyphicon-ok-sign"></span> Select datasets</div>
-  <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps"><span class="glyphicon glyphicon-ok-sign"></span> Select visualisation type</div>
-  <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps"><span class="glyphicon glyphicon-ok-sign"></span> Select data columns</div>
-  <div class="wizard-box ng-scope ng-binding active" ng-class="{active: activeStep == step}" ng-repeat="step in steps">4. Edit visualisation</div>
-  <div class="wizard-box ng-scope ng-binding" ng-class="{active: activeStep == step}" ng-repeat="step in steps">5. Add metadata</div>
-  </wizard-progress-bar>
-  <div class="buttons ng-scope">
-    <a href="/communitydata-styleguide/wizard-step-3">
-    <div class="btn btn-default pull-left"><span class="glyphicon glyphicon-chevron-left"></span> Back</div>
-    </a>
-  </div>
-  <div class="buttons ng-scope">
-    <a href="/communitydata-styleguide/wizard-step-5">
-    <div class="btn btn-primary pull-right">Add metadata <span class="glyphicon glyphicon-chevron-right"></span></div>
-    </a>
-  </div>
-  <div class="content ng-scope">
-    <!-- %p Browse datasets: -->
-    <div class="list-group">
-      <!-- ngRepeat: dataset in datatables | orderBy:'label' -->
-    </div>
-  </div>
-  <div class="ng-scope">
-    <div class="selected-data">
-      <h4>Edit the physical attributes of your visualisation</h4>
-      <hr>
-      <!-- ngRepeat: dataset in datatables | filter: {selected: true} -->
-    </div>
-  </div>
-</div>
-</wizard-progress-bar>
-
-<div class="row">
+      <div class="row">
   <div class="col-md-12">
-    <img class="media-object" data-src="holder.js/1140x400" alt="Visualisation preview">
+  <ul class="nav nav-pills">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Edit</a></li>
+    <li><a href="#">Shortcuts</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <!-- <div class="pull-right">
+    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus-sign"></span> Copy</button>
+    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-info-sign"></span> Edit details</button>
+    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-wrench"></span> Edit visualization</button>
+  </div> -->
   </div>
 </div>
+<hr/>
+<!-- COLUMN: User details -->
+<div class="row">
+  <div class="col-md-4">
+    <img src="../images/user-avatar-gilesgibson.png" width="240px" height="240px">
+    <h2>Giles Gibson</h2>
+    <p>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+    </p>
+    <p>Hi there, my name is Giles Gibson. I've been a regular contributor to COD for over a year now. I'm involved with Lambeth Council as well as the Herne Hill Forum and, through my work on both I founded COD. I'm really interested in discovering more about the Lambeth area through linked data.</p>
 
-<div id="row">
-  <div class="col-sm-6 col-md-3">
-    <h4>Global chart settings</h4>
+    <p><strong>Member for:<br/></strong> Weds 30/11/13</p>
+    <p><strong>Last online:<br/></strong> Sat 30/12/14</p>
+    <p><strong>Visualisations:<br/></strong> 1374</p>
+    <p><strong>Expertise:<br/></strong> Business & commerce</p>
+    <!-- BLOCK: Tags -->
+    <h3>Tagged as:</h3>
+    <p class="label label-default">user-defined tag #1</p>
+    <p class="label label-default">user-defined tag #2</p>
+    <p class="label label-default">user-defined tag #3</p>
+    <p class="label label-default">user-defined tag #4</p>
+    <p class="label label-default">user-defined tag #5</p>
+  </div>
+
+  <!-- COLUMN: Viz listing -->
+  <h3>My visualisations</h3>
+  <div class="list-group col-md-8">
+    <!-- List item 1 -->
+    <a href="#" class="list-group-item clearfix">
+    <img data-src="holder.js/200x160" class="media-object pull-left" alt="Dashboard thumbnail">
+    <h4 class="list-group-item-heading">Commercial planning permission request applications granted vs total applications, Kennington, 2012–13</h4>
+    <p class="pull-right"><strong>Type:</strong> Chloropleth map</p>
+    <p><strong>Added:</strong> Wed 29/11/13</p>
+    <p><strong>Updated:</strong> Mon 19/12/14</p>
+    <p class="pull-right">
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+    </p>
+    <p><strong>Categories:</strong> Housing</p>
+    <p>This map shows the number of planning permission requests that have been made between January 2012 and January 2013 in the Kennington area.</p>
+    </a> <!-- class="list-group-item" -->
+    <!-- List item 2 -->
+    <a href="#" class="list-group-item clearfix">
+    <img data-src="holder.js/200x160" class="media-object pull-left" alt="Dashboard thumbnail">
+    <h4 class="list-group-item-heading">Commercial planning permission request applications granted vs total applications, Kennington, 2012–13</h4>
+    <p class="pull-right"><strong>Type:</strong> Chloropleth map</p>
+    <p><strong>Added:</strong> Wed 29/11/13</p>
+    <p><strong>Updated:</strong> Mon 19/12/14</p>
+    <p class="pull-right">
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+    </p>
+    <p><strong>Categories:</strong> Housing</p>
+    <p>This map shows the number of planning permission requests that have been made between January 2012 and January 2013 in the Kennington area.</p>
+    </a> <!-- class="list-group-item" -->
+    <!-- List item 3 -->
+    <a href="#" class="list-group-item clearfix">
+    <img data-src="holder.js/200x160" class="media-object pull-left" alt="Dashboard thumbnail">
+    <h4 class="list-group-item-heading">Commercial planning permission request applications granted vs total applications, Kennington, 2012–13</h4>
+    <p class="pull-right"><strong>Type:</strong> Chloropleth map</p>
+    <p><strong>Added:</strong> Wed 29/11/13</p>
+    <p><strong>Updated:</strong> Mon 19/12/14</p>
+    <p class="pull-right">
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+    </p>
+    <p><strong>Categories:</strong> Housing</p>
+    <p>This map shows the number of planning permission requests that have been made between January 2012 and January 2013 in the Kennington area.</p>
+    </a> <!-- class="list-group-item" -->
+    <!-- List item 4 -->
+    <a href="#" class="list-group-item clearfix">
+    <img data-src="holder.js/200x160" class="media-object pull-left" alt="Dashboard thumbnail">
+    <h4 class="list-group-item-heading">Commercial planning permission request applications granted vs total applications, Kennington, 2012–13</h4>
+    <p class="pull-right"><strong>Type:</strong> Chloropleth map</p>
+    <p><strong>Added:</strong> Wed 29/11/13</p>
+    <p><strong>Updated:</strong> Mon 19/12/14</p>
+    <p class="pull-right">
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-active"></span>
+    <span class="glyphicon glyphicon-star ratings-star-inactive"></span>
+    </p>
+    <p><strong>Categories:</strong> Housing</p>
+    <p>This map shows the number of planning permission requests that have been made between January 2012 and January 2013 in the Kennington area.</p>
+    </a> <!-- class="list-group-item" -->
+    </div> <!-- class="row" -->
 
   </div>
-  <div class="col-sm-6 col-md-3">
-    <h4>Global chart settings</h4>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <h4>Global chart settings</h4>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <h4>Global chart settings</h4>
-  </div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       </div>
     </div>
