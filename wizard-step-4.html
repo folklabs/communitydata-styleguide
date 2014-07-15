@@ -4,7 +4,7 @@ layout: drupal-page
 
 <wizard-progress-bar active-step="Datasets" class="ng-scope">
 <div ng-view="">
-  <h2 class="ng-scope">Choose datasets</h2>
+  <h2 class="ng-scope">Create visualization: Edit visualisation attributes</h2>
   <wizard-progress-bar active-step="Datasets" class="ng-scope">
   <!-- ngRepeat: step in steps -->
   <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps"><span class="glyphicon glyphicon-ok-sign"></span> Select datasets</div>
@@ -45,18 +45,123 @@ layout: drupal-page
   </div>
 </div>
 
-<div id="row">
-  <div class="col-sm-6 col-md-3">
-    <h4>Global chart settings</h4>
+<form role="form">
+  <div id="row">
+    <div class="col-sm-6 col-md-3">
+      <h3>Basic settings</h3>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Width (pixels)</label>
+        <input type="text" class="form-control" id="viz-width" placeholder="Width">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Height (pixels)</label>
+        <input type="text" class="form-control" id="viz-height" placeholder="Height">
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <h3>Scales & Data</h3>
+      <div class="form-group">
+        <label for="InputVizWidth">Width (pixels)</label>
+        <input type="text" class="form-control" id="viz-width" placeholder="Width">
+      </div>
+      <div class="form-group">
+        <label for="InputVizHeight">Height (pixels)</label>
+        <input type="text" class="form-control" id="viz-height" placeholder="Height">
+      </div>
+    </div>
 
+
+    <div class="col-sm-6 col-md-3">
+      <h3>Axes</h3>
+      <div class="form-group">
+        <label for="InputXAxisTitle">Axis title</label>
+        <input type="text" class="form-control" id="viz-width" placeholder="Title text">
+      </div>
+        <div class="form-group">
+        <label for="InputXAxisTitle">Angle</label>
+        <input type="text" class="form-control" id="viz-width" placeholder="Angle (degrees)">
+      </div>
+      <div class="form-group">
+        <label for="InputLabelBaseline">Colour</label>
+        <select class="form-control">
+          <option>Colour group 1</option>
+          <option>Colour group 2</option>
+          <option>Colour group 3</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="InputLabelAlign">Label alignment</label>
+        <select class="form-control">
+          <option>Left</option>
+          <option>Center</option>
+          <option>Right</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="InputLabelBaseline">Label baseline</label>
+        <select class="form-control">
+          <option>Top</option>
+          <option>Middle</option>
+          <option>Bottom</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="InputXAxisFontSize">Font size</label>
+        <input type="text" class="form-control" id="viz-width" placeholder="Angle (degrees)">
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <h3>Marks</h3>
+      <div class="form-group">
+        <label for="InputMarks--------------">Width (pixels)</label>
+        <input type="text" class="form-control" id="marks-------------" placeholder="Marks">
+      </div>
+      <div class="form-group">
+        <label for="InputMarks--------------">Height (pixels)</label>
+        <input type="text" class="form-control" id="marks-----------" placeholder="Marks">
+      </div>
+      <button type="submit" class="btn btn-primary pull-right">Submit</button>
+    </div>
   </div>
-  <div class="col-sm-6 col-md-3">
-    <h4>Global chart settings</h4>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <h4>Global chart settings</h4>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <h4>Global chart settings</h4>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
   </div>
 </div>
