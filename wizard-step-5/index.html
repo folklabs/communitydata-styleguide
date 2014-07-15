@@ -59,9 +59,23 @@
                 <li><a href="/communitydata-styleguide/wizard-step-1">Visualisation</a></li>
                 <li><a href="#">Dashboard</a></li>
                 <li><a href="#">Data story</a></li>
+                <li><a href="#">Review</a></li>
               </ul>
             </li>
-            <li><a href="/communitydata-styleguide/user-ggibson"><img src ="../images/user-avatar-gilesgibson.png"> Giles Gibson</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img height=20px width=20px src ="../images/user-avatar-gilesgibson.png"> Giles Gibson <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/communitydata-styleguide/user-ggibson">Account</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Favourites</a></li>
+                <li><a href="#">Datasets</a></li>
+                <li><a href="#">Visualisations</a></li>
+                <li><a href="#">Dashboards</a></li>
+                <li><a href="#">Data stories</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Log out</a></li>
+              </ul>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -72,7 +86,7 @@
       <div class="wrap">
       <wizard-progress-bar active-step="Datasets" class="ng-scope">
 <div ng-view="">
-  <h2 class="ng-scope">Choose datasets</h2>
+  <h2 class="ng-scope">Create visualisation: Add metadata</h2>
   <wizard-progress-bar active-step="Datasets" class="ng-scope">
   <!-- ngRepeat: step in steps -->
   <div class="wizard-box ng-scope ng-binding complete" ng-class="{active: activeStep == step}" ng-repeat="step in steps"><span class="glyphicon glyphicon-ok-sign"></span> Select datasets</div>
